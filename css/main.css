@@ -1,0 +1,35 @@
+html {
+	border: solid 2px green;
+
+}
+
+.prog-lang-title {
+	
+	/*make it big*/
+}
+
+.side-by-side {
+	border: solid 2px red;
+	display: flex;
+	flex-direction: row; /*default, but just in case*/	
+	justify-content: space-evenly;
+}
+
+.side-by-side > * {
+	border: solid 2px cyan;
+	margin: 3%;
+}
+
+.img-link:hover {
+	border: solid 1px black;
+	box-shadow: 8px 4px 2px navy;	
+}
+
+@media screen and (max-width: 768px) {
+	.side-by-side {
+		border: solid 2px red;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+}
