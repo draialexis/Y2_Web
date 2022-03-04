@@ -1,6 +1,6 @@
 html {
 	border: solid 2px green;
-
+	height: 150%;
 }
 
 .prog-lang-title {
@@ -17,7 +17,7 @@ html {
 
 .side-by-side > * {
 	border: solid 2px cyan;
-	margin: 3%;
+	margin: 1%;
 }
 
 .img-link:hover {
@@ -25,11 +25,26 @@ html {
 	box-shadow: 8px 4px 2px navy;	
 }
 
+.to-top {
+	background-color: #aaa;
+	border: solid 1px #777;
+	padding: 5px;
+}
+
+
+footer {
+    width           : 100%;
+    height          : 8%;
+    background      : #333333;
+    position        : fixed;
+    bottom          : 0;
+    left            : 0;
+}
+
 @media screen and (max-width: 768px) {
 	.side-by-side {
 		border: solid 2px red;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
 	}
 }
