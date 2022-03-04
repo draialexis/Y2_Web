@@ -1,6 +1,12 @@
 html {
     border : solid 2px green;
     height : 150%;
+	background-color : #A3CDDA;
+}
+
+.nom-site {
+	font-size : 230%;
+	font-family : Times, Times New Roman, serif;
 }
 
 .prog-lang-title {
@@ -31,7 +37,21 @@ html {
     padding          : 5px;
 }
 
+#sommaire {
+	font-size : 230%;
+	margin-left: auto;
+	margin-right: auto;
+	width:60%;
+	background-color : #D5E6EA;
+}
 
+#list-option {
+	font-size : 200%;
+	margin-left : auto;
+	margin-right : auto;
+	width : 60%;
+	background-color : #5C7B5A;
+}
 footer {
     width      : 100%;
     height     : 8%;
