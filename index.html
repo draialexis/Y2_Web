@@ -4,13 +4,13 @@
 		<meta charset="utf-8">
 		<link href="css/reset.css" type="text/css" rel="stylesheet">
 		<link href="css/main.css" type="text/css" rel="stylesheet">
-		<title class="nom-site">Coder pour les noobs</title>
+		<title>Coder pour les noobs</title>
 	</head>
 	<body>
-		<header><h1 id="top">Coder pour les noobs</h1></header>
+		<header><h1 class="top"><a href="index.html"><img class="img-link" src="img/logo_site.svg" alt="Logo du site 'coder pour les noobs'"></a></h1></header>
 		<header><h2 id="sommaire">Sommaire</h2></header>
-		<nav id="list-option">
-			<ul>
+		<nav id="list">
+			<ul id="list-option">
 				<li><a href="html.html">HTML</a></li>
 				<li><a href="css.html">CSS</a></li>
 				<li><a href="js.html">JavaScript</a></li>
@@ -18,6 +18,17 @@
 				<li>Soumettre un post</li>
 			</ul>
 		</nav>
+		<form class="newsletter" method="get">
+			<fieldset class="newsletterbox">
+				<div class="contour">
+					<div class="champ-recherche">
+						<input class="newsletter" placeholder="Entrez votre email">
+					</div>
+					<button class="bouton-nl" type="submit">Soummetre
+					</button>
+				</div>
+			</fieldset>
+		</form>
 		<!-- <aside></aside> -->
 		<footer>copyright stuff</footer>
 	</body>

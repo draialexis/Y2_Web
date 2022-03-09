@@ -7,7 +7,7 @@
     <title>Coder pour les noobs</title>
 </head>
 <body>
-<header><h1 class="top"><a href="index.html"><img class="img-link" src="img/logo_site.svg" alt="Logo du site 'coder pour les noobs'"></a></h1></header>
+<header><h1 class="top">Coder pour les noobs</h1></header>
 <div class="side-by-side">
     <nav>
         <ul>
