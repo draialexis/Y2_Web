@@ -32,30 +32,54 @@ inserer du contenu dans les pages existantes
 
 */
 
-document.addEventListener('DOMContentLoaded', function() {
-	addAllEvents();
-	
+document.addEventListener('DOMContentLoaded', function () {
+    addAllEvents();
+
 }, false);
 
-function addAllEvents(){
-	event.preventDefault();
-	event.stopPropagation();
-	//? ^
-	const lastName = document.getElementById("lastname");
-	const firstName = document.getElementById("firstname");
-	const birthDate = document.getElementById("birthdate");
-	const userName = document.getElementById("username");
-	const userPwd = document.getElementById("userpwd");
-	const userEmail = document.getElementById("useremail");
-	
-	lastName.addEventListener('change', noEmpty);
-	firstName.addEventListener('change', noEmpty);
+function addAllEvents() {
+    event.preventDefault();
+    event.stopPropagation();
+    //? ^
+    const lastName = document.getElementById("lastname");
+    const firstName = document.getElementById("firstname");
+    const birthDate = document.getElementById("birthdate");
+    const userName = document.getElementById("username");
+    const userPwd = document.getElementById("userpwd");
+    const userEmail = document.getElementById("useremail");
 
-	function noEmpty(e){
-		if(e.target.value.length === 0){
-			e.target.classList.add("js-invalid");
-		}
-	}
+    lastName.addEventListener('change', checkNoEmpty);
+    firstName.addEventListener('change', checkNoEmpty);
+    birthDate.addEventListener('change', checkDateFormat);
+    userName.addEventListener('change', checkUsername);
+    userPwd.addEventListener('change', checkPwd);
+    userEmail.addEventListener('change', checkNoEmpty)
+
+    function checkNoEmpty(e) {
+        if (e.target.value.length < 1) {
+            e.target.classList.add("js-invalid");
+        }
+    }
+
+    function checkDateFormat(e) {
+
+    }
+
+    function checkUsername(e) {
+        if (e.target.value.length < 6) {
+            e.target.classList.add("js-invalid");
+        }
+    }
+
+    function checkPwd(e) {
+        const pwdExp = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})");
+        if (!(e.target.match(pwdExp))) {
+            e.target.classList.add("js-invalid");
+        }
+    }
+
+
+
 }
 
 // js-valid avec 'input' au lieu de 'change'

@@ -2,30 +2,43 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-	<link href="css/reset.css" type="text/css" rel="stylesheet">
-	<link href="css/main.css" type="text/css" rel="stylesheet">
-	<title>Coder pour les noobs</title>
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <title>Coder pour les noobs</title>
 </head>
 <body>
-<header><h1 class="top"><a href="index.html"><img class="img-link" src="img/logo_site.svg" alt="Logo du site 'coder pour les noobs'"></a></h1></header>
+<header><h1 class="top"><a href="index.html"><img class="img-link" src="img/logo_site.svg"
+                                                  alt="Logo du site 'coder pour les noobs'"></a></h1></header>
 <form action="js/login.js" method="post">
-	<div class="formulaire">
-		<input class="required" id="lastname" type="text" placeholder="Nom *" required>
-		
-		<input class="required" id="firstname" type="text" placeholder="Prénom *" required>
-		
-		<input type="text" id="birthdate" placeholder="Date de naissance">
-		
-		<input class="required" id="username" type="text" placeholder="Nom d'utilisateur *" name="username" required>
-		<label for="username">Au moins 6 caractères</label>
-		
-		<input class="required" id="userpwd" type="password" placeholder="Mot de passe *" name="password" required>
-		<label for="password">Au moins 8 caractères, une majuscule, une minuscule et un chiffre</label>
-		
-		<input class="required" id="useremail" type="text" placeholder="Adresse e-mail *" required>
-		
-		<button class="bouton-nl" type="submit" disabled>Soumettre</button>
-	</div>
+    <div class="formulaire">
+        <label for="lastname">Nom</label>
+        <input class="required" id="lastname" type="text" placeholder="*" required>
+        <p class="warning" id="lastname-warning" hidden>Non vide</p>
+
+        <label for="firstname">Prénom</label>
+        <input class="required" id="firstname" type="text" placeholder="*" required>
+        <p class="warning" id="firstname-warning" hidden>Non vide</p>
+
+        <label for="birthdate">Date de naissance</label>
+        <input type="text" id="birthdate" placeholder="(optionnel) jj/mm/aaaa">
+        <p class="warning" id="birthdate-warning" hidden>Vide, ou au format jj/mm/aaaa</p>
+
+        <label for="username">Nom d'utilisateur</label>
+        <input class="required" id="username" type="text" placeholder="*" name="username" required>
+        <p class="warning" id="username-warning" hidden>Au moins 6 caractères</p>
+
+        <label for="userpwd">Mot de passe</label>
+        <input class="required" id="userpwd" type="password" placeholder="*" name="password" required>
+        <p class="warning" id="userpwd-warning" hidden>
+            Au moins 8 caractères, dont au moins : 1 minuscule, 1 majuscule, 1 chiffre
+        </p>
+
+        <label for="useremail">E-mail</label>
+        <input class="required" id="useremail" type="text" placeholder="*" required>
+        <p class="warning" id="useremail-warning" hidden>Non vide et au format d'une adresse e-mail</p>
+
+        <button class="bouton-nl" type="submit" disabled>Soumettre</button>
+    </div>
 </form>
 <section>
     <header></header>
