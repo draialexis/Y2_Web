@@ -1,14 +1,14 @@
 html {
     border           : solid 2px green;
-    height           : 150%;
+    height           : 100%;
     background-color : #CED5D8;
 }
 
-.top {
-	border : solid 2px pink;
-	width : 40%;
-	margin : auto;
-	text-align : center;
+#top, .top {
+    border     : solid 2px pink;
+    width      : 40%;
+    margin     : auto;
+    text-align : center;
 }
 
 .prog-lang-title {
@@ -28,6 +28,11 @@ html {
     margin : 1%;
 }
 
+.img-link {
+    width:auto;
+    height: 90px;
+}
+
 .img-link:hover {
     border     : solid 1px black;
     box-shadow : 8px 4px 2px navy;
@@ -39,60 +44,54 @@ html {
     padding          : 5px;
 }
 
-input{
-	display: block;
-}
-
-.required:after{
-	border : solid 2px red;
-	content:" *";
-	color: red;
+form input {
+    display : block;
 }
 
 #sommaire {
     font-size        : 290%;
-	font-family		 : serif;
+    font-family      : serif;
     margin           : auto;
     text-align       : center;
     width            : 65%;
-    background-color : #fff;
+    background-color : #FFFFFF;
     border           : solid 2px violet;
 }
 
 #list {
-	border     : solid 2px yellow;
-	margin     : auto;
+    border : solid 2px yellow;
+    margin : auto;
 }
 
 #list-option {
-	border           : solid 2px purple;
-	list-style       : url('../img/puce-liste.svg');
+    border           : solid 2px purple;
+    list-style       : url('../img/puce-liste.svg');
     font-size        : 230%;
-	font-family      : serif;
+    font-family      : serif;
     margin           : auto;
     width            : 65%;
-	line-height      : 40px;
-    background-color : #fff;
+    line-height      : 40px;
+    background-color : #FFFFFF;
 }
 
 .newsletter {
-	border : solid 2px lime;
+    border : solid 2px lime;
 }
 
 .newsletterbox {
-	border : solid 2px red;
+    border : solid 2px red;
 }
 
 .contour {
-	border : solid 2px orange;
+    border : solid 2px orange;
 }
 
 .champ-recherche {
-	border : solid 2px cyan;
+    border : solid 2px cyan;
 }
 
 .bouton-nl {
-	border : solid 2px blue;
+    border : solid 2px blue;
 }
 
 footer {
@@ -105,11 +104,11 @@ footer {
 }
 
 .js-invalid {
-	border: solid 2px red;
+    border : solid 2px red;
 }
 
 .js-valid {
-	border: solid 2px lime;
+    border : solid 2px lime;
 }
 
 @media screen and (min-width : 1px) and (max-width : 768px) {
