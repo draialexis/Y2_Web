@@ -41,6 +41,13 @@ function addAllEvents() {
     event.preventDefault();
     event.stopPropagation();
     //? ^
+    const dobExp = new RegExp("^(\\d{2})/(\\d{2})/(\\d{4})$"); // jj/mm/aaaa
+    const pwdExp = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})"); // 8 chars, incl. 1 lower, 1 upper, 1 num
+    const emailExp = new RegExp("^[a-zA-Z0-9.-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$"); // (alpha and . )@(alpha).(alpha)...
+
+    const validClass = "js-valid";
+    const invalidClass = "js-invalid";
+
     const lastName = document.getElementById("lastname");
     const firstName = document.getElementById("firstname");
     const birthDate = document.getElementById("birthdate");
@@ -48,37 +55,58 @@ function addAllEvents() {
     const userPwd = document.getElementById("userpwd");
     const userEmail = document.getElementById("useremail");
 
-    lastName.addEventListener('change', checkNoEmpty);
-    firstName.addEventListener('change', checkNoEmpty);
-    birthDate.addEventListener('change', checkDateFormat);
-    userName.addEventListener('change', checkUsername);
-    userPwd.addEventListener('change', checkPwd);
-    userEmail.addEventListener('change', checkNoEmpty)
+    lastName.addEventListener('input', valNoEmpty);
+    firstName.addEventListener('input', valNoEmpty);
+    birthDate.addEventListener('input', valDateFormat);
+    userName.addEventListener('input', valUsername);
+    userPwd.addEventListener('input', valPwd);
+    userEmail.addEventListener('input', valEmail);
 
-    function checkNoEmpty(e) {
-        if (e.target.value.length < 1) {
-            e.target.classList.add("js-invalid");
+    function validate(inElm) {
+        inElm.classList.remove(invalidClass);
+        inElm.classList.add(validClass);
+    }
+
+    function invalidate(inElm) {
+        inElm.classList.remove(validClass);
+        inElm.classList.add(invalidClass);
+    }
+
+    function checkSize(inElm, minSize) {
+        if (inElm.value.length >= minSize && inElm.classList.contains(invalidClass)) {
+            validate(inElm);
+        } else if (inElm.value.length < minSize) {
+            invalidate(inElm);
         }
     }
 
-    function checkDateFormat(e) {
-
-    }
-
-    function checkUsername(e) {
-        if (e.target.value.length < 6) {
-            e.target.classList.add("js-invalid");
+    function checkFormat(inElm, inFormat) {
+        if (inElm.value.match(inFormat) && inElm.classList.contains(invalidClass)) {
+            validate(inElm);
+        } else if (!(inElm.value.match(inFormat))) {
+            invalidate(inElm);
         }
     }
 
-    function checkPwd(e) {
-        const pwdExp = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})");
-        if (!(e.target.match(pwdExp))) {
-            e.target.classList.add("js-invalid");
-        }
+    function valNoEmpty(e) {
+        checkSize(e.target, 1);
     }
 
+    function valDateFormat(e) {
+        checkFormat(e.target, dobExp);
+    }
 
+    function valUsername(e) {
+        checkSize(e.target, 6);
+    }
+
+    function valPwd(e) {
+        checkFormat(e.target, pwdExp);
+    }
+
+    function valEmail(e) {
+        checkFormat(e.target, emailExp);
+    }
 
 }
 
