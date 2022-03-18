@@ -10,19 +10,19 @@
 <header><h1 class="top"><a href="index.html"><img class="img-link" src="img/logo_site.svg" alt="Logo du site 'coder pour les noobs'"></a></h1></header>
 <form action="js/login.js" method="post">
 	<div class="formulaire">
-		<input class="required" type="text" placeholder="Nom *" required>
+		<input class="required" id="lastname" type="text" placeholder="Nom *" required>
 		
-		<input class="required" type="text" placeholder="Prénom *" required>
+		<input class="required" id="firstname" type="text" placeholder="Prénom *" required>
 		
-		<input type="text" placeholder="Date de naissance">
+		<input type="text" id="birthdate" placeholder="Date de naissance">
 		
-		<input class="required" type="text" placeholder="Nom d'utilisateur *" name="username" required>
+		<input class="required" id="username" type="text" placeholder="Nom d'utilisateur *" name="username" required>
 		<label for="username">Au moins 6 caractères</label>
 		
-		<input class="required" type="password" placeholder="Mot de passe *" name="password" required>
+		<input class="required" id="userpwd" type="password" placeholder="Mot de passe *" name="password" required>
 		<label for="password">Au moins 8 caractères, une majuscule, une minuscule et un chiffre</label>
 		
-		<input class="required" type="text" placeholder="Adresse e-mail *" required>
+		<input class="required" id="useremail" type="text" placeholder="Adresse e-mail *" required>
 		
 		<button class="bouton-nl" type="submit" disabled>Soumettre</button>
 	</div>
@@ -34,5 +34,6 @@
 </section>
 <!-- <aside></aside> -->
 <footer></footer>
+<script type="text/javascript" src="js/login.js"></script>
 </body>
 </html>

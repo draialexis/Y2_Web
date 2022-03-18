@@ -104,6 +104,14 @@ footer {
     left       : 0;
 }
 
+.js-invalid {
+	border: solid 2px red;
+}
+
+.js-valid {
+	border: solid 2px lime;
+}
+
 @media screen and (min-width : 1px) and (max-width : 768px) {
     .side-by-side {
         border         : solid 2px red;
