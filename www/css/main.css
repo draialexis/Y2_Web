@@ -21,6 +21,7 @@ html {
     display         : flex;
     flex-direction  : row; /*default, but just in case*/
     justify-content : space-evenly;
+    flex            : 1 1 auto;
 }
 
 .side-by-side > * {
@@ -29,8 +30,10 @@ html {
 }
 
 .img-link {
-    width:auto;
-    height: 90px;
+    width      : auto;
+    height     : 90px;
+    margin     : auto;
+    text-align : center;
 }
 
 .img-link:hover {
@@ -59,20 +62,41 @@ form input {
 }
 
 #list {
-    border : solid 2px yellow;
-    margin : auto;
+    border    : solid 2px yellow;
+    padding   : 3%;
+    font-size : 150%;
+    width     : 40%;
+    margin    : auto;
 }
 
-#list-option {
-    border           : solid 2px purple;
-    list-style       : url('../img/puce-liste.svg');
-    font-size        : 230%;
-    font-family      : serif;
-    margin           : auto;
-    width            : 65%;
-    line-height      : 40px;
-    background-color : #FFFFFF;
+/*.list-option {*/
+/*    border           : solid 2px purple;*/
+/*    list-style       : url('../img/puce-liste.svg');*/
+/*    font-family      : serif;*/
+/*    margin           : auto;*/
+/*    background-color : #FFFFFF;*/
+/*    font-size   : 230%;*/
+/*    width       : 65%;*/
+/*    line-height : 40px;*/
+/*}*/
+
+.list-option {
+    min-width : 100px;
 }
+
+.list-option > li {
+    list-style-type : none;
+    position        : relative;
+}
+
+.list-option > li::before {
+    content     : '</>';
+    font-weight : bold;
+    position    : absolute;
+    left        : -2em;
+    font-size   : 1em;
+}
+
 
 .newsletter {
     border : solid 2px lime;
@@ -111,7 +135,7 @@ footer {
     border : solid 2px lime;
 }
 
-@media screen and (min-width : 1px) and (max-width : 768px) {
+@media all and (max-width : 768px) {
     .side-by-side {
         border         : solid 2px red;
         display        : flex;
