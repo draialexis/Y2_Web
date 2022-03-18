@@ -57,34 +57,34 @@ function addAllEvents() {
 
     lastName.addEventListener('input', valNoEmpty);
     firstName.addEventListener('input', valNoEmpty);
-    birthDate.addEventListener('input', valDateFormat);
+    birthDate.addEventListener('input', valDate);
     userName.addEventListener('input', valUsername);
     userPwd.addEventListener('input', valPwd);
     userEmail.addEventListener('input', valEmail);
 
-    function validate(inElm) {
-        inElm.classList.remove(invalidClass);
-        inElm.classList.add(validClass);
+    function validate(elm) {
+        elm.classList.remove(invalidClass);
+        elm.classList.add(validClass);
     }
 
-    function invalidate(inElm) {
-        inElm.classList.remove(validClass);
-        inElm.classList.add(invalidClass);
+    function invalidate(elm) {
+        elm.classList.remove(validClass);
+        elm.classList.add(invalidClass);
     }
 
-    function checkSize(inElm, minSize) {
-        if (inElm.value.length >= minSize && inElm.classList.contains(invalidClass)) {
-            validate(inElm);
-        } else if (inElm.value.length < minSize) {
-            invalidate(inElm);
+    function checkSize(elm, minSize) {
+        if (elm.value.length >= minSize && elm.classList.contains(invalidClass)) {
+            validate(elm);
+        } else if (elm.value.length < minSize) {
+            invalidate(elm);
         }
     }
 
-    function checkFormat(inElm, inFormat) {
-        if (inElm.value.match(inFormat) && inElm.classList.contains(invalidClass)) {
-            validate(inElm);
-        } else if (!(inElm.value.match(inFormat))) {
-            invalidate(inElm);
+    function checkFormat(elm, inFormat) {
+        if (elm.value.match(inFormat) && elm.classList.contains(invalidClass)) {
+            validate(elm);
+        } else if (!(elm.value.match(inFormat))) {
+            invalidate(elm);
         }
     }
 
@@ -92,7 +92,7 @@ function addAllEvents() {
         checkSize(e.target, 1);
     }
 
-    function valDateFormat(e) {
+    function valDate(e) {
         checkFormat(e.target, dobExp);
     }
 
