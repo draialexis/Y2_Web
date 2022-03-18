@@ -7,7 +7,7 @@ function addAllEvents() {
     event.preventDefault();
     event.stopPropagation();
     //? ^
-    const dobExp = new RegExp("^(\\d{2})/(\\d{2})/(\\d{4})$"); // jj/mm/aaaa
+    const dobExp = new RegExp("^(\\d{2})\/(\\d{2})\/(\\d{4})$"); // jj/mm/aaaa
     const pwdExp = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})"); // 8 chars, incl. 1 lower, 1 upper, 1 num
     const emailExp = new RegExp("^[a-zA-Z0-9.-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$"); // (alpha and . )@(alpha).(alpha)...
 
