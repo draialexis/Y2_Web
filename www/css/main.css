@@ -39,6 +39,16 @@ html {
     padding          : 5px;
 }
 
+input{
+	display: block;
+}
+
+.required:after{
+	border : solid 2px red;
+	content:" *";
+	color: red;
+}
+
 #sommaire {
     font-size        : 290%;
 	font-family		 : serif;
@@ -61,7 +71,7 @@ html {
 	font-family      : serif;
     margin           : auto;
     width            : 65%;
-	line-height      : 15px;
+	line-height      : 40px;
     background-color : #fff;
 }
 
