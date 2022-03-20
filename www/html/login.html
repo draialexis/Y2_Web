@@ -25,14 +25,14 @@
             <li><a href="js.html">JavaScript</a></li>
         </ul>
     </nav>
-    <form action="../js/login.js" method="post">
+    <form action="../htbin/register.py" method="post" id="login-form">
         <div class="formulaire">
             <label for="lastname">Nom</label>
-            <input class="login-field" id="lastname" type="text" placeholder="*" required>
+            <input class="login-field" id="lastname" type="text" placeholder="*">
             <p class="warning" id="lastname-warning" hidden>doit être non vide</p>
 
             <label for="firstname">Prénom</label>
-            <input class="login-field" id="firstname" type="text" placeholder="*" required>
+            <input class="login-field" id="firstname" type="text" placeholder="*">
             <p class="warning" id="firstname-warning" hidden>doit être non vide</p>
 
             <label for="birthdate">Date de naissance</label>
@@ -40,20 +40,20 @@
             <p class="warning" id="birthdate-warning" hidden>peut être vide, ou doit être au format jj/mm/aaaa</p>
 
             <label for="username">Nom d'utilisateur</label>
-            <input class="login-field" id="username" type="text" placeholder="*" name="username" required>
+            <input class="login-field" id="username" type="text" placeholder="*" name="username">
             <p class="warning" id="username-warning" hidden>doit avoir au moins 6 caractères</p>
 
             <label for="userpwd">Mot de passe</label>
-            <input class="login-field" id="userpwd" type="password" placeholder="*" name="password" required>
+            <input class="login-field" id="userpwd" type="password" placeholder="*" name="password">
             <p class="warning" id="userpwd-warning" hidden>
                 doit avoir au moins 8 caractères, dont au moins : 1 minuscule, 1 majuscule, 1 chiffre
             </p>
 
             <label for="useremail">E-mail</label>
-            <input class="login-field" id="useremail" type="text" placeholder="*" required>
+            <input class="login-field" id="useremail" type="text" placeholder="*">
             <p class="warning" id="useremail-warning" hidden>doit être non vide et au format d'une adresse e-mail</p>
 
-            <button id="login-submit" class="bouton-nl" type="submit" disabled>Soumettre</button>
+            <input id="login-submit" class="bouton-nl" type="submit" value="Soumettre" disabled>
         </div>
     </form>
 </div>
