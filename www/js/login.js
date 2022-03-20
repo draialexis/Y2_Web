@@ -21,12 +21,12 @@ function addAllEvents() {
     const userPwd = document.getElementById("userpwd");
     const userEmail = document.getElementById("useremail");
 
-    lastName.addEventListener('input', valNoEmpty);
-    firstName.addEventListener('input', valNoEmpty);
-    birthDate.addEventListener('input', valDate);
-    userName.addEventListener('input', valUsername);
-    userPwd.addEventListener('input', valPwd);
-    userEmail.addEventListener('input', valEmail);
+    lastName.addEventListener('input', checkNoEmpty);
+    firstName.addEventListener('input', checkNoEmpty);
+    birthDate.addEventListener('input', checkDate);
+    userName.addEventListener('input', checkUserName);
+    userPwd.addEventListener('input', checkPwd);
+    userEmail.addEventListener('input', checkEmail);
 
     function validate(elm) {
         elm.classList.remove(invalidClass);
@@ -54,24 +54,28 @@ function addAllEvents() {
         }
     }
 
-    function valNoEmpty(e) {
+    function checkNoEmpty(e) {
         checkSize(e.target, 1);
     }
 
-    function valDate(e) {
+    function checkDate(e) {
         checkFormat(e.target, dobExp);
     }
 
-    function valUsername(e) {
+    function checkUserName(e) {
         checkSize(e.target, 6);
     }
 
-    function valPwd(e) {
+    function checkPwd(e) {
         checkFormat(e.target, pwdExp);
     }
 
-    function valEmail(e) {
+    function checkEmail(e) {
         checkFormat(e.target, emailExp);
+    }
+
+    function checkAll(e) {
+
     }
 }
 
