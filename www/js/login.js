@@ -38,26 +38,26 @@ function addAllEvents() {
     );
 
     function checkNoEmpty(e) {
-        return check(e.target, 1, e.target.value.length >= 1);
+        return check(e.target, e.target.value.length >= 1);
     }
 
     function checkDate(e) {
-        return check(e.target, dobExp, e.target.value.match(dobExp));
+        return check(e.target, e.target.value.match(dobExp)) || e.target.value === "" || e.target.value === null;
     }
 
     function checkUserName(e) {
-        return check(e.target, 6, e.target.value.length >= 6);
+        return check(e.target, e.target.value.length >= 6);
     }
 
     function checkPwd(e) {
-        return check(e.target, pwdExp, e.target.value.match(pwdExp));
+        return check(e.target, e.target.value.match(pwdExp));
     }
 
     function checkEmail(e) {
-        return check(e.target, emailExp, e.target.value.match(emailExp));
+        return check(e.target, e.target.value.match(emailExp));
     }
 
-    function check(elm, inFormat, condition) {
+    function check(elm, condition) {
         if (condition && elm.classList.contains(invalidClass)) {
             elm.classList.remove(invalidClass);
             elm.classList.add(validClass);
@@ -74,7 +74,7 @@ function addAllEvents() {
         if (
             lastName.value.length >= 1
             && firstName.value.length >= 1
-            && birthDate.value.match(dobExp)
+            && (birthDate.value === "" || birthDate.value === null || birthDate.value.match(dobExp))
             && userName.value.length >= 6
             && userPwd.value.match(pwdExp)
             && userEmail.value.match(emailExp)
