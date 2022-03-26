@@ -94,6 +94,33 @@ p + ol {
 /*
 ^^^^^^ tiered ordered lists ^^^^^^
  */
+/*
+~~~~~~ link styles ~~~~~~
+ */
+.link {
+    box-shadow: 0 3px 0 #008080;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+}
+
+.link:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: #eee4d5;
+}
+
+.link:active {
+    box-shadow: none;
+    top: 5px;
+}
+
+.link:visited {
+    color: #000;
+}
+/*
+^^^^^^ link styles ^^^^^^
+ */
 #sommaire {
     font-size        : 290%;
     font-family      : serif;
