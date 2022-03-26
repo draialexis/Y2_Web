@@ -37,10 +37,10 @@
         </div>
         <article>
             <p>JavaScript est un langage de programmation de scripts principalement employé dans les pages web
-                interactives et à ce titre est une partie essentielle des applications web. Avec les langages HTML et
-                CSS, JavaScript est au cœur des langages utilisés par les développeurs web. Une grande majorité des
-                sites web l'utilisent, et la majorité des navigateurs web disposent d'un moteur JavaScript pour
-                l'interpréter.
+                interactives et à ce titre est une partie essentielle des applications web. Avec les langages
+                <a class="link" href="html.html">HTML</a> et <a class="link" href="css.html">CSS</a>, JavaScript est au
+                cœur des langages utilisés par les développeurs web. Une grande majorité des sites web l'utilisent, et
+                la majorité des navigateurs web disposent d'un moteur JavaScript pour l'interpréter.
             </p>
             <p>JavaScript est aussi employé pour les serveurs Web avec l'utilisation (par exemple) de Node.js ou de
                 Deno.
@@ -61,68 +61,356 @@
             </p>
             <ol>
                 <li>
-                    Histoire
+                    <a href="#Histoire">Histoire</a>
                     <ol>
-                        <li>Début</li>
+                        <li><a href="#Debut">Debut</a></li>
                         <li>
-                            Standardisation
+                            <a href="#Standardisation">Standardisation</a>
                             <ol>
-                                <li>Version 1 : Naissance du standard ECMA-262</li>
-                                <li>Version 2 : Homogénéisation avec le standard ISO/CEI 16262</li>
-                                <li>Version 3 : Améliorations et constitution du langage</li>
-                                <li>Version 4 : L'étape inachevée</li>
-                                <li>Version 5 : Désambiguïsation et nouvelles fonctionnalités</li>
-                                <li>Version 6 : Amélioration du support et des fonctionnalités</li>
-                                <li>De la version 7 à nos jours : une adaptation permanente aux outils du web</li>
+                                <li>
+                                    <a href="#Version-1">Version 1 : Naissance du standard ECMA-262</a>
+                                </li>
+                                <li>
+                                    <a href="#Version-2">Version 2 : Homogénéisation avec le standard ISO/CEI 16262</a>
+                                </li>
+                                <li>
+                                    <a href="#Version-3">Version 3 : Améliorations et constitution du langage</a>
+                                </li>
+                                <li>
+                                    <a href="#Version-4">Version 4 : L'étape inachevée</a>
+                                </li>
+                                <li>
+                                    <a href="#Version-5">Version 5 : Désambiguïsation et nouvelles fonctionnalités</a>
+                                </li>
+                                <li>
+                                    <a href="#Version-6">Version 6 : Amélioration du support et des fonctionnalités</a>
+                                </li>
+                                <li>
+                                    <a href="#Version-7">De la version 7 à nos jours : une adaptation permanente aux
+                                        outils du web</a>
+                                </li>
                             </ol>
                         </li>
                     </ol>
                 </li>
-                <li>Sécurité</li>
+                <li><a href="#Securite">Sécurité</a></li>
                 <li>
-                    Concepts de programmation
+                    <a href="#Concepts-de-programmation">Concepts de programmation</a>
                     <ol>
-                        <li>Hello world</li>
+                        <li><a href="#Hello-world">Hello world</a></li>
                     </ol>
                 </li>
-                <li>Utilisation
+                <li><a href="#Utilisation">Utilisation</a>
                     <ol>
-                        <li>Dans une page web
+                        <li><a href="#Dans-une-page-web">Dans une page web</a>
                             <ol>
-                                <li>Incompatibilité</li>
-                                <li>Ajax</li>
-                                <li>JSON</li>
+                                <li><a href="#Incompatibilite">Incompatibilité</a></li>
+                                <li><a href="#Ajax">Ajax</a></li>
+                                <li><a href="#JSON">JSON</a></li>
                             </ol>
                         </li>
                     </ol>
                     <ol>
-                        <li>Autres utilisations
+                        <li><a href="#Autres-utilisations">Autres utilisations</a>
                             <ol>
-                                <li>Sur un serveur web</li>
-                                <li>Autres supports</li>
+                                <li><a href="#Sur-un-serveur-web">Sur un serveur web</a></li>
+                                <li><a href="#Autres-supports">Autres supports</a></li>
                             </ol>
                         </li>
-                    </ol>
-                </li>
-                <li>Particularités du langage
-                    <ol>
-                        <li>Liaison des identifiants</li>
-                        <li>Portée lexicale des variables</li>
-                        <li>Déclaration des variables</li>
-                        <li>Variables globales</li>
-                        <li>Fonctions anonymes</li>
-                        <li>Fermetures lexicales</li>
-                        <li>Expressions de fonctions immédiatement invoquées</li>
-                        <li>Prototypes</li>
-                        <li>Séparation des instructions</li>
                     </ol>
                 </li>
             </ol>
-            <a href="#top" class="to-top">HAUT</a>
+            <h2 id="Histoire">Histoire</h2>
+            <h3 id="Debut">Début</h3>
+            <p>Le langage a été créé en dix jours en mai 1995 pour le compte de la Netscape Communications Corporation
+                par Brendan Eich, qui s'est inspiré de nombreux langages, notamment de Java mais en simplifiant la
+                syntaxe pour les débutants10. Brendan Eich a initialement développé un langage de script côté serveur,
+                appelé LiveScript, pour renforcer l'offre commerciale de serveur HTTP. Netscape travaille alors au
+                développement d'une version orientée client de LiveScript.
+            </p>
+            <p>Quelques jours avant sa sortie, Netscape change le nom de LiveScript pour JavaScript. Sun Microsystems et
+                Netscape étaient partenaires, et la machine virtuelle Java de plus en plus populaire. Ce changement de
+                nom servait les intérêts des deux sociétés. Le 4 décembre 1995 Netscape et Sun Microsystems annoncent11
+                la sortie de JavaScript, décrit comme un complément à Java, dans un communiqué de presse commun. Cette
+                initiative a contribué à créer auprès du public une certaine confusion entre les deux langages, proches
+                syntaxiquement mais pas du tout dans leurs concepts fondamentaux, et qui perdure encore de nos jours12.
+            </p>
+            <p>En mars 1996, Netscape met en œuvre le moteur JavaScript dans son navigateur web Netscape Navigator 2.0.
+                Le succès de ce navigateur contribue à l'adoption rapide de JavaScript dans le développement web orienté
+                client. Microsoft réagit alors en développant JScript, qu'il inclut ensuite dans Internet Explorer 3.0
+                en août 1996 pour la sortie de son navigateur.
+            </p>
+            <p> «&nbsp;JavaScript&nbsp;» devient une marque déposée par Sun Microsystems aux États-Unis en mai
+                199713,14.
+            </p>
+            <h3 id="Standardisation">Standardisation</h3>
+            <p>Netscape soumet alors JavaScript à Ecma International pour standardisation.
+            </p>
+            <h4 id="Version-1">Version 1 : Naissance du standard ECMA-262</h4>
+            <p>Les travaux débutent en novembre 1996 et se terminent en juin 1997, donnant naissance à la 1re édition du
+                standard ECMA-262 qui spécifie le langage ECMAScript. Le standard est ensuite soumis à l'ISO/CEI et
+                publié en avril 1998 en tant que standard international ISO/CEI 16262.
+            </p>
+            <h4 id="Version-2">Version 2 : Homogénéisation avec le standard ISO/CEI 16262</h4>
+            <p>Des changements rédactionnels sont apportés au standard ECMA-262 pour le conformer au standard
+                international ISO/CEI 16262, aboutissant à la 2e édition du standard ECMA-262 en juin 1998.
+            </p>
+            <h4 id="Version-3">Version 3 : Améliorations et constitution du langage</h4>
+            <p>La 3e édition du standard ECMA-262 introduit :
+            </p>
+            <ul>
+                <li>des expressions rationnelles plus puissantes,</li>
+                <li>une amélioration de la manipulation des chaînes de caractères,</li>
+                <li>de nouvelles instructions de contrôle,</li>
+                <li>une gestion des exceptions avec les instructions try/catch</li>
+                <li>le formatage des nombres.</li>
+            </ul>
+            <p>Elle est publiée par Ecma International en décembre 1999 puis soumise à l'ISO/CEI qui publie le standard
+                international ISO/CEI 16262:2002 en juin 2002. Après la publication de la 3e édition s'ensuit une
+                adoption massive par tous les navigateurs Web.
+            </p>
+            <h4 id="Version-4">Version 4 : L'étape inachevée</h4>
+            <p>Un travail important est entrepris pour développer la 4e édition du standard ECMA-262, mais il ne sera
+                pas achevé et cette édition ne verra jamais le jour. Cependant une partie du développement effectué sera
+                intégrée à la 6e édition.
+            </p>
+            <h4 id="Version-5">Version 5 : Désambiguïsation et nouvelles fonctionnalités</h4>
+            <p>La 5e édition du standard ECMA-262 clarifie les ambiguïtés de la 3e édition et introduit les accesseurs,
+                l'introspection, le contrôle des attributs, des fonctions de manipulation de tableaux supplémentaires,
+                le support du format JSON et un mode strict pour la vérification des erreurs. Elle est publiée par Ecma
+                International en décembre 2009 puis soumise à l'ISO/CEI qui apporte des corrections mineures et publie
+                le standard international ISO/CEI 16262:2011 en juin 2011. L'édition 5.1 du standard ECMA-262 reprenant
+                à l'identique le texte du standard international ISO/CEI 16262:2011 est publiée à la même date.
+            </p>
+            <h4 id="Version-6">Version 6 : Amélioration du support et des fonctionnalités</h4>
+            <p>Bien que le développement de la 6e édition du standard ECMA-262 ait commencé officiellement en 2009, peu
+                avant la publication de la 5e édition, sa publication en juin 2015 est en réalité l'aboutissement de 15
+                ans de travail depuis la publication de la 3e édition en 1999. Le but de cette 6e édition est d'apporter
+                un meilleur support pour les applications d'envergure, la création de bibliothèques et l'utilisation
+                d'ECMAScript comme cible de compilation pour d'autres langages. Cette édition introduit notamment les
+                modules, les classes, la portée lexicale au niveau des blocs, les itérateurs et les générateurs, les
+                promesses pour la programmation asynchrone, les patrons de déstructuration, l'optimisation des appels
+                terminaux, de nouvelles structures de données (tableaux associatifs, ensembles, tableaux binaires), le
+                support de caractères Unicode supplémentaires dans les chaînes de caractères et les expressions
+                rationnelles et la possibilité d'étendre les structures de données prédéfinies.
+            </p>
+            <h4 id="Version-7">De la version 7 à nos jours : une adaptation permanente aux outils du web</h4>
+            <p>La 7e édition du standard ECMA-262 est la première édition issue du nouveau processus de développement
+                ouvert et du rythme de publication annuel adoptés par le comité Ecma TC39. Un document au format texte
+                est créé à partir de la 6e édition et est mis en ligne sur GitHub comme base de développement pour cette
+                nouvelle édition. Après la correction de milliers de bugs et d'erreurs rédactionnelles ainsi que
+                l'introduction de l'opérateur d'exponentiation et d'une nouvelle méthode pour les prototypes de
+                tableaux, la 7e édition est publiée en juin 2016.
+            </p>
+            <p>L'édition actuelle du standard ECMA-262 est la 11ème édition publiée en juin 202015.
+            </p>
+            <h2 id="Securite">Sécurité</h2>
+            <p>JavaScript et la structure DOM des pages HTML/XML ont quelques failles de sécurité. En effet, des scripts
+                malveillants peuvent se cacher dans le code d'une page web et s'exécuter sur l'ordinateur cible de
+                l'utilisateur du Web.
+            </p>
+            <p>Les fournisseurs de navigateurs web tentent de réduire ce risque avec deux restrictions :
+            </p>
+            <ul>
+                <li>L'une est de faire exécuter ces scripts dans un espace à part des autres données (sandbox) dans
+                    lequel seules des actions relatives au web (mouvements de souris, affichage de pixel,
+                    communications) peuvent être exécutées, sans avoir accès au système de fichier principal.
+                </li>
+                <li>La deuxième est de n'exécuter les scripts que selon les contraintes de same-origin policy : dans cet
+                    esprit, un site Web ne doit pas avoir accès aux informations telles que les noms d'utilisateur et
+                    mot de passe ou cookies reçus des autres sites visités.
+                </li>
+            </ul>
+            <p>Les vulnérabilités de JavaScript sont bien souvent des brèches d'au moins l'un de ces deux principes.
+            </p>
+            <p>Certains sous-ensembles du langage Javascript tels que JavaScript—ADsafe ou Secure ECMAScript (SES)
+                fournissent de plus grands niveaux de sécurité, en particulier pour les scripts créés par des tierces
+                parties (notamment les publicités)16,17. Caja est un autre logiciel pour inclure et isoler de manière
+                sécurisée du JavaScript et du <a class="link" href="html.html">HTML</a> tierce partie.
+            </p>
+            <p>La Politique de sécurité du contenu est la principale méthode destinée à assurer que seul un script de
+                confiance est exécuté sur une page Web. Meltdown est une vulnérabilité indépendante de Javascript, qui
+                peut notamment être exploitée en Javascript.
+            </p>
+            <h2 id="Concepts-de-programmation">Concepts de programmation</h2>
+            <p>Le propos de JavaScript est de manipuler de façon simple des objets, au sens informatique, fournis par
+                une application hôte. Par exemple dans un navigateur web, un script écrit en javascript peut être
+                utilisé pour apporter une touche interactive ou dynamique à un applicatif (page ou site web), qui sans
+                cela serait une page statique figée. Le langage Javascript permet par exemple d'écrire des scripts pour
+                afficher ou cacher un paragraphe, une image ou un popup, selon les interactions de l'utilisateur, ou
+                d'informer le serveur du temps passé à lire une page.
+            </p>
+            <h3 id="Hello-world">Hello world</h3>
+            <p>Il est possible dans un script en langage Javascript, d'afficher le texte hello world sur la console de
+                debug de l’application. Ceci peut être utilisé par des développeurs en phase de mise au point18. :
+            </p>
+            <p class="code">window.console.log('Hello world');
+                <br>window.console.exp(hello world)
+                <br>// ou
+                <br>global.console.log('Hello world');
+                <br>window.console.log(hello world)
+            </p>
+
+            <p>Dans une application hôte d'un navigateur, console est une des méthodes de l'objet global window19. Dans
+                d'autres applications hôtes comme Node.js, l'objet global est global20. Les méthodes de l'objet global
+                étant accessibles sans préfixe, window et global sont facultatifs.
+            </p>
+            <p>La syntaxe
+                <br><code>console.log('Hello world');</code><br>
+                aura donc exactement le même résultat en plus d'être compatible sur tous les environnements.
+            </p>
+            <h2 id="Utilisation">Utilisation</h2>
+            <p>Le code JavaScript a besoin d'un objet global pour y rattacher les déclarations (variables et fonctions)
+                avant d'exécuter des instructions. La situation la plus connue est celle de l'objet window obtenu dans
+                le contexte d'une page web. D'autres environnements sont possibles dont celui fourni par Adobe ou
+                l'environnement Node.js (voir plus bas Autres utilisations).
+            </p>
+            <h3 id="Dans-une-page-web">Dans une page web</h3>
+            <p>Du code JavaScript peut être intégré directement au sein des pages web, pour y être exécuté sur le poste
+                client. C'est alors le navigateur web qui prend en charge l'exécution de ces programmes appelés scripts.
+            </p>
+            <p>Généralement, JavaScript sert à contrôler les données saisies dans des formulaires
+                <a class="link" href="html.html">HTML</a>, ou à interagir avec le document <a class="link"
+                                                                                              href="html.html">HTML</a>
+                via l'interface Document Object Model, fournie par le navigateur (on parle alors parfois de HTML
+                dynamique ou DHTML). Il est aussi utilisé pour réaliser des applications dynamiques, des transitions,
+                des animations ou manipuler des données réactives, à des fins ergonomiques ou cosmétiques.
+            </p>
+            <p>JavaScript n'est pas limité à la manipulation de documents <a class="link" href="html.html">HTML</a> et
+                peut aussi servir à manipuler des documents SVG, XUL et autres dialectes XML.
+            </p>
+            <h4 id="Incompatibilite">Incompatibilité</h4>
+            <p>Netscape et Microsoft (avec JScript dans Internet Explorer jusqu'à la version 9) ont développé leur
+                propre variante de ce langage qui chacune supporte presque intégralement la norme ECMAScript mais
+                possède des fonctionnalités supplémentaires et incompatibles, rarement utilisées dans le cadre de la
+                programmation de pages web. Pourtant les scripts JavaScript sont souvent la source de difficultés. Elles
+                sont plus souvent dues à la prise en charge des différentes versions des modèles d'objets (DOM) fournis
+                par les navigateurs, qu'à des problèmes de portabilité du langage (les différentes mises en œuvre
+                respectant relativement bien la norme ECMAScript).
+            </p>
+            <p>Pour vérifier dynamiquement si un objet (dans la version JavaScript utilisée lors de l'interprétation)
+                possède bien une méthode, on utilise souvent une construction du type :
+            </p>
+            <p class="code">if (monObjet.methode && typeof monObjet.methode === 'function') {
+                <br>&emsp;monObjet.methode();
+                <br>}</p>
+            <p>On vérifie ainsi que monObjet a bien une mise en œuvre de methode que l'on peut alors utiliser. Le plus
+                souvent, si un navigateur ne gère pas la methode de monObjet, il gère une méthode comparable methode2,
+                et on peut alors adapter le code JavaScript au navigateur qui l'exécute :
+            </p>
+            <p class="code">if (typeof monObjet.methode === 'function') {
+                <br>&emsp;monObjet.methode();
+                <br>} else if (typeof monObjet.methode2 === 'function') {
+                <br>&emsp;monObjet.methode2();
+                <br>}</p>
+            <p>Une autre méthode consiste à vérifier, côté serveur, le navigateur utilisé par le client et d'envoyer le
+                code correspondant. Cela n'est toutefois pas recommandable, car il est largement préférable de tester
+                directement l'existence, le comportement d'une fonction, d'une propriété, etc. plutôt que de faire des
+                présomptions basées sur la détection du navigateur.
+            </p>
+            <h4 id="Ajax">Ajax</h4>
+            <p>Ajax (de l'anglais Asynchronous JavaScript And XML) est un ensemble de techniques découplant l'échange de
+                données entre le navigateur et le serveur web de l'affichage d'une page web, ce qui permet de modifier
+                le contenu des pages web sans les recharger. Grâce à l'objet JavaScript XMLHTTPRequest, cette méthode
+                permet d'effectuer des requêtes HTTP sur le serveur web depuis le navigateur web, et permet également de
+                traiter les réponses HTTP du serveur web pour modifier le contenu de la page web. La réponse était en
+                général au format XML qui tend aujourd'hui à être remplacé par le format JSON qui a l'avantage d'être
+                natif en JavaScript. Le script manipule l'ensemble d'objets DOM qui représente le contenu de la page
+                web. Les technologies XMLHTTPRequest, XML et DOM ont été ajoutées aux navigateurs web entre 1995 et
+                2005. La méthode Ajax permet de réaliser des applications Internet riches, offrant une maniabilité et un
+                confort supérieur ; c'est un des sujets phares du mouvement Web 2.0.
+            </p>
+            <h4 id="JSON">JSON</h4>
+            <p>JSON (JavaScript Object Notation) est un format utilisant la notation des objets JavaScript pour
+                transmettre de l'information structurée, d'une façon plus compacte et plus proche des langages de
+                programmation, que XML.
+            </p>
+            <p>Malgré l'existence du DOM et l'introduction récente de E4X (voir ci-dessous) dans la spécification du
+                langage JavaScript, JSON reste le moyen le plus simple d'accéder à des données, puisque chaque flux JSON
+                n'est rien d'autre qu'un objet JavaScript sérialisé. De plus, malgré son lien historique (et technique)
+                avec JavaScript, JSON reste un format de données structurées, et peut être utilisé facilement par tous
+                les langages de programmation.
+            </p>
+            <p>Depuis 2009, les navigateurs commencent à intégrer un support natif du format JSON, ce qui facilite sa
+                manipulation, la sécurité (contre l'évaluation de scripts malveillants inclus dans une chaine JSON), et
+                la rapidité de traitement. Ainsi les navigateurs Firefox et IE21 l'intègrent respectivement dès les
+                versions 3.5 et 8.
+            </p>
+            <p>Exemple de JSON :
+            </p>
+            <p class="code">
+                {
+                <br>&emsp;"clef1": "valeur",
+                <br>&emsp;"clef2": 12345,
+                <br>&emsp;"clef3": true,
+                <br>&emsp;"clef4": {
+                <br>&emsp;&emsp;"clef5": "valeur"
+                <br>&emsp;}
+                <br>}
+            </p>
+            <p>La structure est organisée par clef/valeurs. Les clefs doivent être entre guillemets doubles. Les valeurs
+                peuvent être :
+            </p>
+            <ul>
+                <li>une string (chaîne de caractères entre guillemets doubles)
+                </li>
+                <li>un nombre</li>
+                <li>un booléen (true ou false pour vrai ou faux)</li>
+                <li>une structure clef/valeur</li>
+            </ul>
+            <p>Un JSON valide ne peut pas comporter de commentaires. Il existe des validateurs de JSON en ligne.
+            </p>
+            <h3 id="Autres-utilisations">Autres utilisations</h3>
+            <h4 id="Sur-un-serveur-web">Sur un serveur web</h4>
+            <p>JavaScript peut également être utilisé comme langage de programmation sur un serveur HTTP à l'image des
+                langages comme PHP, ASP, etc. D'ailleurs le projet CommonJS travaille dans le but de spécifier un
+                écosystème pour JavaScript en dehors du navigateur (par exemple sur le serveur ou pour les applications
+                de bureau natives). Le projet a été lancé par Kevin Dangoor en janvier 2009. Le projet CommonJS n'est
+                pas affilié avec le groupe de l'Ecma International TC39 travaillant sur ECMAScript, mais certains
+                membres du TC39 participent au projet.
+            </p>
+            <p>Historiquement, JavaScript était proposé sur les serveurs de Netscape, par la suite distribués par Sun
+                Microsystems sous les noms iPlanet et Sun ONE, mais JScript peut aussi être utilisé sur les serveurs
+                Internet Information Services de Microsoft. JScript peut d'ailleurs servir pour scripter une plate-forme
+                Microsoft Windows via Windows Scripting Host (WSH).
+            </p>
+            <p>Il existe par ailleurs des projets indépendants et Open Source d'implémentation de serveurs en
+                JavaScript. Parmi eux, on pourra distinguer Node.js, une plateforme polyvalente de développement
+                d'applications réseau se basant sur le moteur JavaScript V8 et les spécifications CommonJS.
+            </p>
+            <h4 id="Autres-supports"> Autres supports</h4>
+            <p>ActionScript, utilisé dans Adobe Flash, est aussi une mise en œuvre d'ECMAScript. Il permet de manipuler
+                tous les éléments de l'animation, considérés comme des objets. JavaScript peut être utilisé pour
+                scripter d'autres applications Adobe (Photoshop, Illustrator, …), ce qui permet d'avoir des scripts
+                indépendants de la plate-forme (Microsoft Windows, Apple OSX, Linux…).
+            </p>
+            <p>JavaScript est enfin utilisé dans la plate-forme de développement de Mozilla, sur laquelle sont basés
+                plusieurs logiciels comme des navigateurs Web, pour des tâches relatives à l'interface utilisateur et à
+                la communication interne (ex. : les extensions de Firefox et Thunderbird sont installées à base de
+                fichiers XPI utilisant le JavaScript. Voir aussi Prefs.js).
+            </p>
+            <p>Depuis 2004, l'objet js de l'environnement de programmation graphique Max/MSP permet d'ouvrir une fenêtre
+                pour programmer en JavaScript, au sein même d'un programme Max/MSP.
+            </p>
+            <p>Les logiciels ImageJ et CaRMetal sont munis de consoles JavaScript, qui leur permettent d'écrire des
+                scripts dans un contexte graphique. Algobox utilise JavaScript pour la syntaxe de ses fonctions. H5P se
+                sert de <a class="link" href="html.html">HTML5</a> et Javascript pour faciliter la création de contenus
+                interactifs
+                en ligne.
+            </p>
+            <p>JavaScript est aussi utilisé dans un contenu BIFS pour l'exploitation des événements. Pour cela la
+                spécification BIFS fournit un nœud Script pour incorporer de l'ECMAScript.
+            </p>
+            <p>La suite bureautique OpenOffice.org permet d'utiliser JavaScript comme langage de macros.
+            </p>
+            <p>JavaScript est aussi utilisable en shell22 ou avec les gadgets Vista.
+            </p>
+            <p>Le format graphique vectoriel SVG incorpore le langage ECMAscript pour créer des graphiques interactifs
+                directement exploitable dans un navigateur.
+            </p>
+            <p>Enfin, JavaScript est également utilisé pour dynamiser le QML de la bibliothèque graphique Qt.
+            </p><a href="#top" class="to-top">HAUT</a>
         </article>
-
-
-        <footer></footer>
     </section>
 </main>
 <footer>copyright stuff</footer>

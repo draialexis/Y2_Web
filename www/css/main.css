@@ -55,6 +55,15 @@ form input {
     display : block;
 }
 
+code {
+    background-color: #DDD;
+}
+
+.code {
+    background-color: #DDD;
+    font-family: monospace;
+}
+
 /*
 thanks to https://stackoverflow.com/users/2217862/jakub-jirutka 's answer
 at https://stackoverflow.com/questions/4098195/can-ordered-list-produce-result-that-looks-like-1-1-1-2-1-3-instead-of-just-1
@@ -88,7 +97,7 @@ li ol > li:before {
 }
 
 p + ol {
-    margin-top: 1%;
+    margin-top : 1%;
 }
 
 /*
@@ -98,26 +107,27 @@ p + ol {
 ~~~~~~ link styles ~~~~~~
  */
 .link {
-    box-shadow: 0 3px 0 #008080;
-    position: relative;
-    text-decoration: none;
-    color: #000;
+    box-shadow      : 0 3px 0 #008080;
+    position        : relative;
+    text-decoration : none;
+    color           : #000000;
 }
 
 .link:hover {
-    color: #000;
-    text-decoration: none;
-    background-color: #eee4d5;
+    color            : #000000;
+    text-decoration  : none;
+    background-color : #EEE4D5;
 }
 
 .link:active {
-    box-shadow: none;
-    top: 5px;
+    box-shadow : none;
+    top        : 5px;
 }
 
 .link:visited {
-    color: #000;
+    color : #000000;
 }
+
 /*
 ^^^^^^ link styles ^^^^^^
  */
