@@ -11,11 +11,9 @@
     <p>Ce site utilise JavaScript, mais il semblerait que ce navigateur l'ait désactivé</p>
 </noscript>
 <header>
-    <h1 class="top" id="top">
-        <a href="../index.html">
-            <img class="img-link" src="../img/logo_site.svg" alt="Logo du site 'coder pour les noobs'">
-        </a>
-    </h1>
+    <h1 class="top" id="top"><a href="../index.html"> <img class="img-link"
+                                                           src="../img/logo_site.svg"
+                                                           alt="Logo du site 'coder pour les noobs'"> </a></h1>
 </header>
 <main class="side-by-side">
     <nav>
@@ -27,35 +25,35 @@
         </ul>
     </nav>
     <form action="../htbin/register.py" method="post" id="login-form">
-        <div class="formulaire">
-            <label for="lastname">Nom</label>
-            <input class="login-field" id="lastname" type="text" placeholder="*">
+        <div class="formulaire"><label for="lastname">Nom</label> <input class="login-field"
+                                                                         id="lastname"
+                                                                         type="text"
+                                                                         placeholder="*">
             <p class="warning" id="lastname-warning" hidden>doit être non vide</p>
-
-            <label for="firstname">Prénom</label>
-            <input class="login-field" id="firstname" type="text" placeholder="*">
+            <label for="firstname">Prénom</label> <input class="login-field" id="firstname" type="text" placeholder="*">
             <p class="warning" id="firstname-warning" hidden>doit être non vide</p>
-
-            <label for="birthdate">Date de naissance</label>
-            <input class="login-field" id="birthdate" type="text" placeholder="(optionnel) jj/mm/aaaa">
+            <label for="birthdate">Date de naissance</label> <input class="login-field"
+                                                                    id="birthdate"
+                                                                    type="text"
+                                                                    placeholder="(optionnel) jj/mm/aaaa">
             <p class="warning" id="birthdate-warning" hidden>peut être vide, ou doit être au format jj/mm/aaaa</p>
-
-            <label for="username">Nom d'utilisateur</label>
-            <input class="login-field" id="username" type="text" placeholder="*" name="username">
+            <label for="username">Nom d'utilisateur</label> <input class="login-field"
+                                                                   id="username"
+                                                                   type="text"
+                                                                   placeholder="*"
+                                                                   name="username">
             <p class="warning" id="username-warning" hidden>doit avoir au moins 6 caractères</p>
-
-            <label for="userpwd">Mot de passe</label>
-            <input class="login-field" id="userpwd" type="password" placeholder="*" name="password">
-            <p class="warning" id="userpwd-warning" hidden>
-                doit avoir au moins 8 caractères, dont au moins : 1 minuscule, 1 majuscule, 1 chiffre
+            <label for="userpwd">Mot de passe</label> <input class="login-field"
+                                                             id="userpwd"
+                                                             type="password"
+                                                             placeholder="*"
+                                                             name="password">
+            <p class="warning" id="userpwd-warning" hidden> doit avoir au moins 8 caractères, dont au moins : 1
+                minuscule, 1 majuscule, 1 chiffre
             </p>
-
-            <label for="useremail">E-mail</label>
-            <input class="login-field" id="useremail" type="text" placeholder="*">
+            <label for="useremail">E-mail</label> <input class="login-field" id="useremail" type="text" placeholder="*">
             <p class="warning" id="useremail-warning" hidden>doit être non vide et au format d'une adresse e-mail</p>
-
-            <input id="login-submit" class="bouton-nl" type="submit" value="Soumettre" disabled>
-        </div>
+            <input id="login-submit" class="bouton-nl" type="submit" value="Soumettre" disabled></div>
     </form>
 </main>
 <footer>copyright stuff</footer>

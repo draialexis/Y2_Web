@@ -9,7 +9,7 @@ main {
 }
 
 article {
-    padding: 1.5%;
+    padding : 1.5%;
 }
 
 #top, .top {
@@ -60,12 +60,12 @@ form input {
 }
 
 code {
-    background-color: #DDD;
+    background-color : #DDD;
 }
 
 .code {
-    background-color: #DDD;
-    font-family: monospace;
+    background-color : #DDD;
+    font-family      : monospace;
 }
 
 /*
