@@ -8,6 +8,10 @@ main {
     padding-bottom : 8%;
 }
 
+article {
+    padding: 1.5%;
+}
+
 #top, .top {
     border     : solid 2px pink;
     width      : 40%;
@@ -41,14 +45,14 @@ main {
 }
 
 .img-link:hover {
-    border     : solid 1px black;
     box-shadow : 8px 4px 2px navy;
 }
 
 .to-top {
     background-color : #AAAAAA;
     border           : solid 1px #777777;
-    padding          : 5px;
+    padding          : 6px;
+    top              : 12px;
 }
 
 form input {
@@ -115,7 +119,6 @@ p + ol {
 
 .link:hover {
     color            : #000000;
-    text-decoration  : none;
     background-color : #EEE4D5;
 }
 
