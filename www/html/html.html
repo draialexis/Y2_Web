@@ -87,7 +87,7 @@
             </p>
             <h2 id="Evolution-du-langage">Evolution du langage</h2>
             <p>
-                Durant la première moitié des années 1990, avant l'apparition des technologies Web comme le langage <a
+                Durant la première moitié des années 1990, avant l'apparition des technologies Web comme le langage <a class="link"
                     href="js.html">JavaScript</a> (JS), les <a class="link" href="css.html">feuilles de style en cascade</a> (CSS) et
                 le Document Object Model (DOM), l'évolution de HTML a dicté l'évolution du World Wide Web. Depuis 1997
                 et HTML 4, l'évolution de HTML a fortement ralenti; dix ans plus tard, HTML 4 reste utilisé dans les
@@ -209,23 +209,24 @@
                 version 4 de HTML.<br>Certains attributs s’appliquent à presque tous les éléments :
             <ul>
                 <li>
-                    Les attributs génériques "id" (identificateur unique) et "class" (identificateur répétable) destinés
-                    à permettre l’application de traitements externes, tels que l’application de styles de présentation
+                    Les attributs génériques <code>id</code> (identificateur unique) et <code>class</code> (identificateur répétable) 
+					destinés à permettre l’application de traitements externes, tels que l’application de styles de présentation
                     ou de manipulation de l’arbre du document via un langage de script.<br>Il s’y ajoute l’attribut
-                    "style" permettant de définir le style de présentation de l’élément (généralement en <a
-                        href="css.html">CSS</a>), et l’attribut "title" apportant une information complémentaire de
-                    nature le plus souvent libre (L’exception majeure est l’utilisation du "title" pour déterminer le
+                    <code>style</code> permettant de définir le style de présentation de l’élément (généralement en <a class="link"
+                        href="css.html">CSS</a>), et l’attribut <code>title</code> apportant une information complémentaire de
+                    nature le plus souvent libre (L’exception majeure est l’utilisation du <code>title</code> pour déterminer le
                     style permanent et les éventuels styles alternatifs appliqués à un document via des éléments
-                    "link");
+                    <code>link</code>);
                 </li>
                 <li>
-                    Les attributs d'internationalisation "dir" et "lang" spécifiant la direction d'écriture et la langue
+                    Les attributs d'internationalisation <code>dir</code> et <code>lang</code> spécifiant la direction d'écriture et la langue
                     du contenu;
                 </li>
                 <li>
-                    Les gestionnaires d’évènements onclick, ondblclick, onkeydown, onkeypress, onkeyup, onmousedown,
-                    onmousemove, onmouseout, onmouseover, onmouseup, qui capturent les évènements générés dans l’élément
-                    pour appeler un script.
+                    Les gestionnaires d’évènements <code>onclick</code>, <code>ondblclick</code>, <code>onkeydown</code>, 
+					<code>onkeypress</code>, <code>onkeyup</code>, <code>onmousedown</code>, <code>onmousemove</code>, 
+					<code>onmouseout</code>, <code>onmouseover</code>, <code>onmouseup</code>, qui capturent les évènements 
+					générés dans l’élément pour appeler un script.
                 </li>
             </ul>
             <br>D’autres attributs sont propres à un élément unique, ou des éléments similaires. Par exemple :
@@ -233,28 +234,29 @@
                 <li>
                     Les éléments qui permettent d’inclure dans le document des ressources graphiques sont dotés
                     d’attributs de hauteur et de largeur, afin que le navigateur puisse anticiper la taille de la
-                    ressource à afficher avant que celle-ci n’ait été téléchargée : img, object, iframe ;
+                    ressource à afficher avant que celle-ci n’ait été téléchargée : <code>img</code>, <code>object</code>, 
+					<code>iframe</code> ;
                 </li>
                 <li>
                     Des éléments spécifiques sont dotés d’un attribut assumant une fonction unique, tel que l’élément
-                    label des étiquettes des contrôles de formulaire et son attribut for désignant le contrôle concerné
-                    : c’est, en HTML, et avec les attributs usemap et ismap des images, l’une des très rares
-                    associations explicites et formalisées entre des éléments, indépendamment de leur ordre linéaire
-                    dans le code source.
+                    label des étiquettes des contrôles de formulaire et son attribut <code>for</code> désignant le 
+					contrôle concerné : c’est, en HTML, et avec les attributs <code>usemap</code> et <code>ismap</code> 
+					des images, l’une des très rares associations explicites et formalisées entre des éléments, indépendamment
+					de leur ordre linéaire dans le code source.
                 </li>
             </ul>
             <br>La plupart des attributs sont facultatifs. Quelques éléments ont cependant des attributs obligatoires :
             <ul>
                 <li>
-                    De par leur nature : l’élément img est obligatoirement doté d’un attribut src spécifiant l’URI de la
-                    ressource graphique qu’il représente. Il en est de même de tous les éléments dits « vides » et «
-                    remplacés » qui, au prix d’une entorse aux règles SGML, n’ont pas de contenu propre. C’est également
-                    le cas d’éléments non vides pour des raisons fonctionnelles, comme l’élément form dont l’attribut
-                    action indique la cible serveur qui traitera les données après soumission ;
+                    De par leur nature : l’élément <code>img</code> est obligatoirement doté d’un attribut <code>src</code> 
+					spécifiant l’URI de la ressource graphique qu’il représente. Il en est de même de tous les éléments dits
+					« vides » et «remplacés » qui, au prix d’une entorse aux règles SGML, n’ont pas de contenu propre. 
+					C’est également le cas d’éléments non vides pour des raisons fonctionnelles, comme l’élément <code>form</code> 
+					dont l’attribut <code>action</code> indique la cible serveur qui traitera les données après soumission ;
                 </li>
                 <li>
                     Pour des raisons liées à l’accessibilité du contenu : les images sont ainsi dotées d’un attribut
-                    obligatoire alt permettant d’indiquer un contenu textuel brut destiné à remplacer la ressource
+                    obligatoire <code>alt</code> permettant d’indiquer un contenu textuel brut destiné à remplacer la ressource
                     graphique dans les contextes de consultation où elle ne peut pas être restituée ou perçue.
                 </li>
             </ul>
@@ -263,9 +265,9 @@
                 validation relève de normes tierces telles que les URI, les types de contenu ou les codes de langages.
                 <br>
                 Certains attributs sont enfin de type booléen. Ce sont les seuls attributs dont la syntaxe peut être
-                validement implicite en HTML : l’attribut selected d’un contrôle de formulaire peut ainsi être raccourci
-                sous la forme selected remplaçant la forme complète selected="selected". Cette forme particulière est un
-                des points différenciant HTML de la syntaxe des documents « bien formés » au sens XML.
+                validement implicite en HTML : l’attribut <code>selected</code> d’un contrôle de formulaire peut ainsi 
+				être raccourci sous la forme <code>selected</code> remplaçant la forme complète <code>selected="selected"</code>. 
+				Cette forme particulière est un des points différenciant HTML de la syntaxe des documents « bien formés » au sens XML.
             </p>
             <h3 id="Jeux-de-caractères">Jeux de caractères</h3>
             <p>
