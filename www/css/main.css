@@ -131,7 +131,7 @@ p + ol {
 /*
 ^^^^^^ link styles ^^^^^^
  */
-#sommaire {
+#titre-sommaire {
     font-size        : 290%;
     font-family      : serif;
     margin           : auto;
@@ -141,7 +141,7 @@ p + ol {
     border           : solid 2px violet;
 }
 
-#list {
+#sommaire {
     border    : solid 2px yellow;
     padding   : 3%;
     font-size : 150%;
