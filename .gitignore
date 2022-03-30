@@ -1,2 +1,4 @@
-desktop.ini
-*.idea
+*/desktop.ini
+*desktop.ini
+*.idea/
+
