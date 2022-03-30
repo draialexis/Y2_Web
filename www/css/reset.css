@@ -39,14 +39,15 @@ hgroup {
 
 h1, .h1-like {
     font-size   : 1.8571em; /* equiv 26px */
-    font-weight : normal;
+    font-weight : bold;
+    font-family : "Baskerville Old Face", serif;
     line-height : 1.6154em;
     margin      : .8077em 0 0 0;
 }
 
 h2, .h2-like {
     font-size   : 1.7143em; /* equiv 24px */
-    font-weight : normal;
+    font-weight : bold;
     line-height : 1.75em;
     margin      : .875em 0 0 0;
 }

@@ -12,16 +12,11 @@ article {
     padding : 1.5%;
 }
 
-#top, .top {
+.top {
     border     : solid 2px pink;
     width      : 40%;
     margin     : auto;
     text-align : center;
-}
-
-.prog-lang-title {
-
-    /*make it big*/
 }
 
 .side-by-side {
@@ -69,7 +64,7 @@ code {
 
 .code {
     background-color : #DDDDDD;
-    font-family      : monospace;
+    font-family      : consolas, 'DejaVu Sans Mono', courier, monospace;
 }
 
 /*
@@ -138,23 +133,23 @@ p + ol {
 /*
 ^^^^^^ link styles ^^^^^^
  */
-#titre-sommaire {
-    font-size        : 290%;
-    font-family      : serif;
-    margin           : auto;
-    text-align       : center;
-    width            : 65%;
-    background-color : #FFFFFF;
-    border           : solid 2px violet;
-}
+/*#titre-sommaire {*/
+/*    font-size        : 290%;*/
+/*    font-family      : serif;*/
+/*    margin           : auto;*/
+/*    text-align       : center;*/
+/*    width            : 65%;*/
+/*    background-color : #FFFFFF;*/
+/*    border           : solid 2px violet;*/
+/*}*/
 
-#sommaire {
-    border    : solid 2px yellow;
-    padding   : 3%;
-    font-size : 150%;
-    width     : 40%;
-    margin    : auto;
-}
+/*#sommaire {*/
+/*    border    : solid 2px yellow;*/
+/*    padding   : 3%;*/
+/*    font-size : 150%;*/
+/*    width     : 40%;*/
+/*    margin    : auto;*/
+/*}*/
 
 /*.list-option {*/
 /*    border           : solid 2px purple;*/
