@@ -19,22 +19,22 @@ function addAllEvents() {
     const userEmail = document.getElementById("useremail");
 
     [checkNoEmpty, checkAll].forEach(fun =>
-        lastName.addEventListener("input", fun, false)
+        lastName.addEventListener("input", fun)
     );
     [checkNoEmpty, checkAll].forEach(fun =>
-        firstName.addEventListener("input", fun, false)
+        firstName.addEventListener("input", fun)
     );
     [checkDate, checkAll].forEach(fun =>
-        birthDate.addEventListener("input", fun, false)
+        birthDate.addEventListener("input", fun)
     );
     [checkUserName, checkAll].forEach(fun =>
-        userName.addEventListener("input", fun, false)
+        userName.addEventListener("input", fun)
     );
     [checkPwd, checkAll].forEach(fun =>
-        userPwd.addEventListener("input", fun, false)
+        userPwd.addEventListener("input", fun)
     );
     [checkEmail, checkAll].forEach(fun =>
-        userEmail.addEventListener("input", fun, false)
+        userEmail.addEventListener("input", fun)
     );
 
     function checkNoEmpty(e) {
@@ -79,11 +79,11 @@ function addAllEvents() {
             && userPwd.value.match(pwdExp)
             && userEmail.value.match(emailExp)
         ) {
-            if (button.disabled === true) {
+            if (button.disabled === true) { // all good + disabled => enable
                 button.disabled = false;
             }
             return true;
-        } else {
+        } else { // not all good + enabled => disable
             if (button.disabled === false) {
                 button.disabled = true;
             }
