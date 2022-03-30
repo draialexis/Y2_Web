@@ -18,48 +18,48 @@
 <main class="side-by-side">
     <nav>
         <ul class="list-option">
-            <li>Log&nbsp;in</li>
+            <li>Sign&nbsp;up</li>
             <li><a class="link" href="html.html">HTML</a></li>
             <li><a class="link" href="css.html">CSS</a></li>
             <li><a class="link" href="js.html">JavaScript</a></li>
         </ul>
     </nav>
-    <form action="../htbin/register.py" method="post" id="login-form">
+    <form action="../htbin/register.py" method="post" id="signup-form">
         <div class="formulaire">
             <label for="lastname">Nom</label>
-            <input class="login-field" id="lastname" type="text" placeholder="*" name="lastname">
+            <input class="signup-field" id="lastname" type="text" placeholder="*" name="lastname">
             <p class="warning" id="lastname-warning" hidden>doit être non vide</p>
 
             <label for="firstname">Prénom</label>
-            <input class="login-field" id="firstname" type="text" placeholder="*" name="firstname">
+            <input class="signup-field" id="firstname" type="text" placeholder="*" name="firstname">
             <p class="warning" id="firstname-warning" hidden>doit être non vide</p>
 
             <label for="birthdate">Date de naissance</label>
-            <input class="login-field" id="birthdate" type="text" placeholder="(optionnel) jj/mm/aaaa" name="birthdate">
+            <input class="signup-field" id="birthdate" type="text" placeholder="(optionnel) jj/mm/aaaa" name="birthdate">
             <p class="warning" id="birthdate-warning" hidden>peut être vide, ou doit être au format jj/mm/aaaa</p>
 
             <label for="username">Nom d'utilisateur</label>
-            <input class="login-field" id="username" type="text" placeholder="*" name="username">
+            <input class="signup-field" id="username" type="text" placeholder="*" name="username">
             <p class="warning" id="username-warning" hidden>doit avoir au moins 6 caractères</p>
 
             <label for="userpwd">Mot de passe</label>
-            <input class="login-field" id="userpwd" type="password" placeholder="*" name="userpwd">
+            <input class="signup-field" id="userpwd" type="password" placeholder="*" name="userpwd">
             <p class="warning" id="userpwd-warning" hidden>
                 doit avoir au moins 8 caractères, dont au moins : 1 minuscule, 1 majuscule, 1 chiffre
             </p>
 
             <label for="useremail">E-mail</label>
-            <input class="login-field" id="useremail" type="text" placeholder="*" name="useremail">
+            <input class="signup-field" id="useremail" type="text" placeholder="*" name="useremail">
             <p class="warning" id="useremail-warning" hidden>doit être non vide et au format d'une adresse e-mail</p>
 
             <div class="side-by-side">
-                <input id="login-submit" class="bouton-nl" type="submit" value="Soumettre" disabled/>
+                <input id="signup-submit" class="bouton-nl" type="submit" value="S'enregistrer" disabled/>
                 <input type="reset" value="Réinitialiser"/>
             </div>
         </div>
     </form>
 </main>
 <footer>copyright stuff</footer>
-<script src="../js/login.js"></script>
+<script src="../js/signup.js"></script>
 </body>
 </html>
