@@ -59,12 +59,16 @@ form input {
     display : block;
 }
 
+h2 {
+    font-weight : bold;
+}
+
 code {
-    background-color : #DDD;
+    background-color : #DDDDDD;
 }
 
 .code {
-    background-color : #DDD;
+    background-color : #DDDDDD;
     font-family      : monospace;
 }
 
