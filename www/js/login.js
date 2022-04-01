@@ -8,14 +8,12 @@ function addAllEvents() {
     const userName = document.getElementById("username");
     const userPwd = document.getElementById("userpwd");
 
-    const form = document.getElementById("login-form");
-
-    form.addEventListener("submit", function (e) {
-        if (/*...*/true) {
-            e.preventDefault();
-            // ...
-        } else {
-            form.submit();
-        }
-    });
+    [userName, userPwd].forEach(input =>
+        input.addEventListener("keyup", function (e) {
+            if (e.key === "Enter") {
+                e.preventDefault();
+                document.getElementById("login-submit").click();
+            }
+        })
+    );
 }
