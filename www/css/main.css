@@ -1,7 +1,10 @@
+body {
+    min-height       : 99vh;
+}
+
 html {
     border           : solid 2px green;
-    height           : 100%;
-    background-color : #CED5D8;
+    background-color : #e8ebec;
 }
 
 main {
@@ -17,6 +20,12 @@ article {
     width      : 40%;
     margin     : auto;
     text-align : center;
+}
+
+.vertical-space-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .side-by-side {
@@ -48,6 +57,10 @@ article {
     border           : solid 1px #777777;
     padding          : 6px;
     top              : 12px;
+}
+
+legend {
+    font-weight: bold;
 }
 
 form input {
@@ -179,6 +192,9 @@ p + ol {
     font-size   : 1em;
 }
 
+.space-above {
+    margin-top: 10%;
+}
 
 .newsletter {
     border : solid 2px lime;

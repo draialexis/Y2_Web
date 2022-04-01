@@ -14,7 +14,6 @@
     <a href="../index.html">
         <img class="img-link" src="../img/logo_site.svg" alt="Logo du site 'coder pour les noobs'">
     </a>
-    <h1>Sign up</h1>
 </header>
 <main class="side-by-side">
     <nav>
@@ -25,8 +24,9 @@
             <li><a class="link" href="js.html">JavaScript</a></li>
         </ul>
     </nav>
-    <form action="../htbin/register.py" method="post" id="signup-form">
-        <div class="formulaire">
+    <form action="../htbin/register.py" method="POST" id="signup-form">
+        <fieldset class="formulaire">
+            <legend>Sign&nbsp;up</legend>
             <label for="lastname">Nom</label>
             <input class="signup-field" id="lastname" type="text" placeholder="*" name="lastname">
             <p class="warning" id="lastname-warning" hidden>doit être non vide</p>
@@ -54,11 +54,11 @@
             <input class="signup-field" id="useremail" type="text" placeholder="*" name="useremail">
             <p class="warning" id="useremail-warning" hidden>doit être non vide et au format d'une adresse e-mail</p>
 
-            <div class="side-by-side">
+            <div class="side-by-side space-above">
                 <input id="signup-submit" class="bouton-nl" type="submit" value="S'enregistrer" disabled/>
                 <input type="reset" value="Réinitialiser"/>
             </div>
-        </div>
+        </fieldset>
     </form>
 </main>
 <footer>copyright stuff</footer>
