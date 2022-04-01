@@ -11,7 +11,7 @@ function addAllEvents() {
     const form = document.getElementById("login-form");
 
     form.addEventListener("submit", function (e) {
-        if (/*...*/) {
+        if (/*...*/true) {
             e.preventDefault();
             // ...
         } else {

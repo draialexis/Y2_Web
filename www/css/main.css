@@ -67,6 +67,11 @@ form input {
     display : block;
 }
 
+.warning {
+    margin-top: 0;
+    color: red;
+}
+
 h2 {
     font-weight : bold;
 }
