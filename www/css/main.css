@@ -61,9 +61,8 @@ article {
     background-color : pink;
     border           : solid 1px #777777;
     padding          : 6px;
-    top              : 10px;
-    left             : 600px;
-    position         : sticky;
+    left             : 85%;
+    top              : 25%;
 }
 
 legend {
