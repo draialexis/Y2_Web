@@ -29,30 +29,31 @@
             <legend>Sign&nbsp;up</legend>
             <label for="lastname">Nom</label>
             <input class="signup-field" id="lastname" type="text" placeholder="*" name="lastname">
-            <p class="warning" id="lastname-warning" hidden>doit être non vide</p>
+            <p class="warning small" id="lastname-warning" hidden>requis</p>
 
             <label for="firstname">Prénom</label>
             <input class="signup-field" id="firstname" type="text" placeholder="*" name="firstname">
-            <p class="warning" id="firstname-warning" hidden>doit être non vide</p>
+            <p class="warning small" id="firstname-warning" hidden>requis</p>
 
             <label for="birthdate">Date de naissance</label>
             <input class="signup-field" id="birthdate" type="text" placeholder="(optionnel) jj/mm/aaaa"
                    name="birthdate">
-            <p class="warning" id="birthdate-warning" hidden>peut être vide, ou doit être au format jj/mm/aaaa</p>
+            <p class="warning small" id="birthdate-warning" hidden>optionnel : jj/mm/aaaa</p>
 
             <label for="username">Nom d'utilisateur</label>
             <input class="signup-field" id="username" type="text" placeholder="*" name="username">
-            <p class="warning" id="username-warning" hidden>doit avoir au moins 6 caractères</p>
+            <p class="warning small" id="username-warning" hidden>requis : au moins 6 caractères</p>
 
             <label for="userpwd">Mot de passe</label>
             <input class="signup-field" id="userpwd" type="password" placeholder="*" name="userpwd">
-            <p class="warning" id="userpwd-warning" hidden>
-                doit avoir au moins 8 caractères, dont au moins : 1 minuscule, 1 majuscule, 1 chiffre
+            <p class="warning small" id="userpwd-warning" hidden>
+                requis : au moins 8 caractères, dont :<br>
+                1 minuscule, 1 majuscule, 1 chiffre
             </p>
 
             <label for="useremail">E-mail</label>
             <input class="signup-field" id="useremail" type="text" placeholder="*" name="useremail">
-            <p class="warning" id="useremail-warning" hidden>doit être non vide et au format d'une adresse e-mail</p>
+            <p class="warning small" id="useremail-warning" hidden>requis: format e-mail</p>
 
             <div class="side-by-side space-above">
                 <input id="signup-submit" class="bouton-nl" type="submit" value="S'enregistrer" disabled/>

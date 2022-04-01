@@ -9,57 +9,57 @@
 </head>
 
 <body>
-    <noscript>
-        <p>Ce site utilise JavaScript, mais il semblerait que ce navigateur l'ait désactivé</p>
-    </noscript>
-    <header class="top">
-        <img src="img/logo_site.svg" alt="Logo du site 'coder pour les noobs'">
-    </header>
-    <main class="side-by-side">
-        <div class="vertical-space-between">
-            <div>
-                <header>
-                    <h1 id="titre-sommaire">Sommaire</h1>
-                </header>
-                <nav id="sommaire">
-                    <ul class="list-option index-list">
-                        <li><a class="link" href="html/signup.html">Sign up</a></li>
-                        <li><a class="link" href="html/html.html">HTML</a></li>
-                        <li><a class="link" href="html/css.html">CSS</a></li>
-                        <li><a class="link" href="html/js.html">JavaScript</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <form class="newsletter space-above" method="POST">
-                <fieldset class="newsletterbox">
-                    <legend>Inscrivez-vous à notre newsletter ici</legend>
-                        <div class="champ-recherche">
-                            <label for="newsletter">Email</label>
-                            <input name="newsletter" id="newsletter">
-                        </div>
-                        <button class="bouton-nl"><a href="img/y2_web.mp4">Soumettre</a></button>
-                </fieldset>
-            </form>
-        </div>
+<noscript>
+    <p>Ce site utilise JavaScript, mais il semblerait que ce navigateur l'ait désactivé</p>
+</noscript>
+<header class="top">
+    <img src="img/logo_site.svg" alt="Logo du site 'coder pour les noobs'">
+</header>
+<main class="side-by-side">
+    <div class="vertical-space-between">
         <div>
-            <form action="/htbin/login.py" method="GET" id="login-form">
-                <fieldset class="formulaire">
-                    <legend>Log&nbsp;in</legend>
-                    <label for="username">Nom d'utilisateur</label>
-                    <input class="login-field" id="username" type="text" placeholder="*" name="username">
-
-                    <label for="userpwd">Mot de passe</label>
-                    <input class="login-field" id="userpwd" type="password" placeholder="*" name="userpwd">
-
-                    <div class="side-by-side space-above">
-                        <input id="login-submit" class="bouton-nl" type="submit" value="S'identifier" disabled />
-                        <input type="reset" value="Réinitialiser" />
-                    </div>
-                </fieldset>
-            </form>
+            <header>
+                <h1 id="titre-sommaire">Sommaire</h1>
+            </header>
+            <nav id="sommaire">
+                <ul class="list-option index-list">
+                    <li><a class="link" href="html/signup.html">Sign up</a></li>
+                    <li><a class="link" href="html/html.html">HTML</a></li>
+                    <li><a class="link" href="html/css.html">CSS</a></li>
+                    <li><a class="link" href="html/js.html">JavaScript</a></li>
+                </ul>
+            </nav>
         </div>
-    </main>
-    <footer>copyright stuff</footer>
-    <script src="../js/login.js"></script>
+        <form class="newsletter space-above" method="POST">
+            <fieldset class="newsletterbox">
+                <legend>Inscrivez-vous à notre newsletter ici</legend>
+                <div class="champ-recherche">
+                    <label for="newsletter">Email</label>
+                    <input name="newsletter" id="newsletter">
+                </div>
+                <button class="bouton-nl"><a href="img/y2_web.mp4">Soumettre</a></button>
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="/htbin/login.py" method="GET" id="login-form">
+            <fieldset class="formulaire">
+                <legend>Log&nbsp;in</legend>
+                <label for="username">Nom d'utilisateur</label>
+                <input class="login-field" id="username" type="text" placeholder="*" name="username">
+
+                <label for="userpwd">Mot de passe</label>
+                <input class="login-field" id="userpwd" type="password" placeholder="*" name="userpwd">
+
+                <div class="side-by-side space-above">
+                    <input id="login-submit" class="bouton-nl" type="submit" value="S'identifier" disabled/>
+                    <input type="reset" value="Réinitialiser"/>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</main>
+<footer>copyright stuff</footer>
+<script src="../js/login.js"></script>
 </body>
 </html>

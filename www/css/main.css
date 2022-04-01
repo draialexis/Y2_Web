@@ -1,10 +1,10 @@
 body {
-    min-height       : 99vh;
+    min-height : 99vh;
 }
 
 html {
     border           : solid 2px green;
-    background-color : #e8ebec;
+    background-color : #E8EBEC;
 }
 
 main {
@@ -26,13 +26,13 @@ article {
 }
 
 .top:hover {
-	background-color : rgba(224, 224, 224, 0.5);
+    background-color : rgba(224, 224, 224, 0.5);
 }
 
 .vertical-space-between {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-between;
 }
 
 .side-by-side {
@@ -65,7 +65,11 @@ article {
 }
 
 legend {
-    font-weight: bold;
+    font-weight : bold;
+}
+
+#signup-form {
+    min-width : 250px;
 }
 
 form input {
@@ -73,8 +77,8 @@ form input {
 }
 
 .warning {
-    margin-top: 0;
-    color: red;
+    margin-top : 0;
+    color      : red;
 }
 
 h2 {
@@ -156,34 +160,6 @@ p + ol {
 /*
 ^^^^^^ link styles ^^^^^^
  */
-/*#titre-sommaire {*/
-/*    font-size        : 290%;*/
-/*    font-family      : serif;*/
-/*    margin           : auto;*/
-/*    text-align       : center;*/
-/*    width            : 65%;*/
-/*    background-color : #FFFFFF;*/
-/*    border           : solid 2px violet;*/
-/*}*/
-
-/*#sommaire {*/
-/*    border    : solid 2px yellow;*/
-/*    padding   : 3%;*/
-/*    font-size : 150%;*/
-/*    width     : 40%;*/
-/*    margin    : auto;*/
-/*}*/
-
-/*.list-option {*/
-/*    border           : solid 2px purple;*/
-/*    list-style       : url('../img/puce-liste.svg');*/
-/*    font-family      : serif;*/
-/*    margin           : auto;*/
-/*    background-color : #FFFFFF;*/
-/*    font-size   : 230%;*/
-/*    width       : 65%;*/
-/*    line-height : 40px;*/
-/*}*/
 
 .list-option {
     min-width : 100px;
@@ -206,7 +182,7 @@ p + ol {
 }
 
 .space-above {
-    margin-top: 10%;
+    margin-top : 10%;
 }
 
 .newsletter {

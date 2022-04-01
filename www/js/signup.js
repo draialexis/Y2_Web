@@ -42,22 +42,16 @@ function addAllEvents() {
 
     function parseMyDate(elm) {
         const now = new Date();
-        let date;
         const arr = elm.split("/");
-        const day = arr[0];
-        const month = arr[1] - 1;
-        const year = arr[2]
         const condition =
-            day >= 1 && day <= 31
-            && month >= 0 && month <= 11
-            && year <= now.getFullYear() && year > 1900;
-
+            arr[0] >= 1 && arr[0] <= 31
+            && arr[1] - 1 >= 0 && arr[1] - 1 <= 11
+            && arr[2] <= now.getFullYear() && arr[2] > 1900;
         if (condition) {
-            date = new Date(year, month, day);
-            return true;
+            const date = new Date(arr[2], arr[1] - 1, arr[0]);
+            return date.getMilliseconds() === date.getMilliseconds();
         }
         return false;
-
     }
 
     function checkDate(e) {
@@ -82,14 +76,14 @@ function addAllEvents() {
                 elm.classList.remove(invalidClass);
             }
             elm.classList.add(validClass);
-            elm.nextElementSibling.hidden = true;
+            elm.nextElementSibling.hidden = true; // displaying warnings
             return true;
         } else if (!condition) {
             if (elm.classList.contains(invalidClass)) {
                 elm.classList.remove(validClass);
             }
             elm.classList.add(invalidClass);
-            elm.nextElementSibling.hidden = false;
+            elm.nextElementSibling.hidden = false; // hiding any warnings
             return false;
         }
     }
