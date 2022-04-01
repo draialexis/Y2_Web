@@ -16,10 +16,17 @@ article {
 }
 
 .top {
-    border     : solid 2px pink;
-    width      : 40%;
-    margin     : auto;
-    text-align : center;
+    flex             : 1;
+    background-color : white;
+    border           : solid 2px pink;
+    width            : 40%;
+    margin           : auto;
+    text-align       : center;
+    transition       : all 0.5s ease-out;
+}
+
+.top:hover {
+	background-color : rgba(224, 224, 224, 0.5);
 }
 
 .vertical-space-between {
@@ -48,15 +55,13 @@ article {
     text-align : center;
 }
 
-.img-link:hover {
-    box-shadow : 8px 4px 2px navy;
-}
-
 .to-top {
-    background-color : #AAAAAA;
+    background-color : pink;
     border           : solid 1px #777777;
     padding          : 6px;
-    top              : 12px;
+    top              : 10px;
+    left             : 600px;
+    position         : sticky;
 }
 
 legend {
@@ -182,6 +187,9 @@ p + ol {
 
 .list-option {
     min-width : 100px;
+    border    : solid 2px pink;
+    position  : sticky;
+    top       : 20px;
 }
 
 .list-option > li {
@@ -215,10 +223,6 @@ p + ol {
 
 .champ-recherche {
     border : solid 2px cyan;
-}
-
-.bouton-nl {
-    border : solid 2px blue;
 }
 
 footer {
