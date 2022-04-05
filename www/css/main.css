@@ -15,6 +15,10 @@ article {
     padding : 1.5%;
 }
 
+#ajax-target{
+    font-weight: bold;
+}
+
 .top {
     background-color : white;
     border           : solid 2px pink;
