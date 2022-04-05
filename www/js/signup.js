@@ -129,5 +129,19 @@ function addAllEvents() {
             form.submit();
         }
     });
-    //TODO reset should clear all borders and warnings
+
+    form.addEventListener("reset", () => {
+        inputFields.forEach(field => {
+            field.nextElementSibling.hidden = true; // hiding warnings
+            if (field.classList.contains(invalidClass)) {
+                field.classList.remove(invalidClass);// removing invalidity styles
+            }
+            if (field.classList.contains(validClass)) {
+                field.classList.remove(validClass);// removing validity styles
+            }
+            if (button.disabled === false) {
+                button.disabled = true;// making sure the submit button is disabled
+            }
+        });
+    });
 }

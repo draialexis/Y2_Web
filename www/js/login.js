@@ -8,6 +8,7 @@ function addAllEvents() {
     const userName = document.getElementById("username");
     const userPwd = document.getElementById("userpwd");
     const form = document.getElementById("login-form");
+    const ajaxTarget = document.getElementById("ajax-target");
 
     [userName, userPwd].forEach(input =>
         input.addEventListener("keyup", function (e) {
@@ -32,20 +33,21 @@ function addAllEvents() {
         xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
         xhr.send(params);
 
-        const target = document.getElementById("ajax-target");
-
         xhr.onreadystatechange = () => {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 const response = xhr.responseText;
                 if (response.startsWith("Bonjour")) {
-                    target.style.color = "darkgreen";
+                    ajaxTarget.style.color = "darkgreen";
                 } else {
-                    target.style.color = "darkred";
+                    ajaxTarget.style.color = "darkred";
                 }
-                target.innerHTML = response;
-                target.hidden = false;
+                ajaxTarget.innerHTML = response;
+                ajaxTarget.hidden = false;
             }
         }
     });
-    //TODO reset should clear all borders and warnings
+
+    form.addEventListener("reset", () => {
+        ajaxTarget.hidden = true;
+    });
 }
