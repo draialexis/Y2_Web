@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="../css/reset.css" type="text/css" rel="stylesheet">
     <link href="../css/main.css" type="text/css" rel="stylesheet">
-    <title>Coder pour les noobs</title>
+    <title>Sign up - Coder pour les noobs</title>
 </head>
 <body>
 <noscript>
@@ -25,43 +25,48 @@
             <li><a class="link" href="js.html">JavaScript</a></li>
         </ul>
     </nav>
-    <form action="../htbin/register.py" method="POST" id="signup-form" class="side-by-side">
-        <fieldset class="formulaire">
-            <legend>Sign&nbsp;up</legend>
-            <label for="lastname">Nom</label>
-            <input class="signup-field" id="lastname" type="text" placeholder="*" name="lastname">
-            <p class="warning small" id="lastname-warning" hidden>requis</p>
+    <div class="side-by-side">
+        <form action="../htbin/register.py" method="POST" id="signup-form">
+            <fieldset class="formulaire">
+                <legend>Sign&nbsp;up</legend>
+                <label for="lastname">Nom</label>
+                <input class="signup-field" id="lastname" type="text" placeholder="*" name="lastname">
+                <p class="warning small" id="lastname-warning" hidden>requis</p>
 
-            <label for="firstname">Prénom</label>
-            <input class="signup-field" id="firstname" type="text" placeholder="*" name="firstname">
-            <p class="warning small" id="firstname-warning" hidden>requis</p>
+                <label for="firstname">Prénom</label>
+                <input class="signup-field" id="firstname" type="text" placeholder="*" name="firstname">
+                <p class="warning small" id="firstname-warning" hidden>requis</p>
 
-            <label for="birthdate">Date de naissance</label>
-            <input class="signup-field" id="birthdate" type="text" placeholder="(optionnel) jj/mm/aaaa"
-                   name="birthdate">
-            <p class="warning small" id="birthdate-warning" hidden>optionnel : jj/mm/aaaa</p>
+                <label for="birthdate">Date de naissance</label>
+                <input class="signup-field" id="birthdate" type="text" placeholder="(optionnel) jj/mm/aaaa"
+                       name="birthdate">
+                <p class="warning small" id="birthdate-warning" hidden>optionnel : jj/mm/aaaa</p>
 
-            <label for="username">Nom d'utilisateur</label>
-            <input class="signup-field" id="username" type="text" placeholder="*" name="username">
-            <p class="warning small" id="username-warning" hidden>requis : au moins 6 caractères</p>
+                <label for="username">Nom d'utilisateur</label>
+                <input class="signup-field" id="username" type="text" placeholder="*" name="username">
+                <p class="warning small" id="username-warning" hidden>requis : au moins 6 caractères</p>
 
-            <label for="userpwd">Mot de passe</label>
-            <input class="signup-field" id="userpwd" type="password" placeholder="*" name="userpwd">
-            <p class="warning small" id="userpwd-warning" hidden>
-                requis : au moins 8 caractères, dont :<br>
-                1 minuscule, 1 majuscule, 1 chiffre
-            </p>
+                <label for="userpwd">Mot de passe</label>
+                <input class="signup-field" id="userpwd" type="password" placeholder="*" name="userpwd">
+                <p class="warning small" id="userpwd-warning" hidden>
+                    requis : au moins 8 caractères, dont :<br>
+                    1 minuscule, 1 majuscule, 1 chiffre
+                </p>
 
-            <label for="useremail">E-mail</label>
-            <input class="signup-field" id="useremail" type="text" placeholder="*" name="useremail">
-            <p class="warning small" id="useremail-warning" hidden>requis: format e-mail</p>
+                <label for="useremail">E-mail</label>
+                <input class="signup-field" id="useremail" type="text" placeholder="*" name="useremail">
+                <p class="warning small" id="useremail-warning" hidden>requis: format e-mail</p>
 
-            <div class="side-by-side space-above">
-                <input id="signup-submit" class="bouton-nl" type="submit" value="S'enregistrer" disabled/>
-                <input type="reset" value="Réinitialiser"/>
-            </div>
-        </fieldset>
-    </form>
+                <div class="side-by-side space-above">
+                    <input class="form-button" id="signup-submit" type="submit" value="S'enregistrer" disabled/>
+                    <input class="form-button" type="reset" value="Réinitialiser"/>
+                </div>
+            </fieldset>
+        </form>
+        <p>
+            azdiugoda
+        </p>
+    </div>
 </main>
 <footer>copyright stuff</footer>
 <script src="../js/signup.js"></script>

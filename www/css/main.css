@@ -1,10 +1,7 @@
 body {
-    min-height : 99vh;
-    padding    : 5%;
-}
-
-html {
-    background-color : lavenderblush;
+    min-height       : 99vh;
+    padding          : 5%;
+    background-color : aliceblue;
 }
 
 main {
@@ -46,6 +43,14 @@ footer {
 
 nav {
     width : 10%;
+}
+
+form {
+    width : 250px;
+}
+
+.form-button {
+    max-width : 100px;
 }
 
 .top {
@@ -91,7 +96,7 @@ nav {
 }
 
 .to-top {
-    background-color : lavenderblush;
+    background-color : aliceblue;
     padding          : 6px;
 }
 
@@ -141,10 +146,6 @@ nav {
 .warning {
     margin-top : 0;
     color      : red;
-}
-
-#signup-form {
-    min-width : 250px;
 }
 
 /*
@@ -219,7 +220,13 @@ p + ol {
 
 @media all and (max-width : 768px) {
     .side-by-side {
-        display        : flex;
-        flex-direction : column;
+        display         : flex;
+        flex-direction  : column;
+        align-items     : center;
+        justify-content : space-evenly;
+    }
+
+    .side-by-side > * {
+        margin-top : 20px;
     }
 }
