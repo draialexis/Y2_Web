@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function addAllEvents() {
     const pwdExp = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})"); // 8 chars, incl. 1 lower, 1 upper, 1 num
-    const emailExp = new RegExp("^[a-zA-Z0-9.-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$"); // (alpha and . )@(alpha)[.(alpha)... OPTIONNAL]
+    const emailExp = new RegExp("^[a-zA-Z0-9.-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$"); // (alpha and . )@(alpha)[.(alpha)... OPTIONAL]
 
     // TODO don't accept diacritics
 
@@ -128,6 +128,9 @@ function addAllEvents() {
             e.preventDefault();
             alert("Le formulaire présente un ou plusieurs problèmes");
         } else {
+            [lastName, firstName, userName].forEach(field => {
+                field.value = field.value.normalize("NFD").replace(/\p{Diacritic}/gu, "");
+            });
             form.submit();
         }
     });

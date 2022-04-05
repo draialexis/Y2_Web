@@ -40,6 +40,7 @@ function addAllEvents() {
 
     loginForm.addEventListener("submit", (e) => {
         e.preventDefault();
+        userName.value = userName.value.normalize("NFD").replace(/\p{Diacritic}/gu, "");
         // could be made more dynamic, and less dependent on details in the html... maybe using FormData?
         // on the other hand, no time + login implementation details are fairly standard
         const params = "username=" + userName.value + "&userpwd=" + userPwd.value;
