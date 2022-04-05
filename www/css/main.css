@@ -49,6 +49,48 @@ form {
     width : 250px;
 }
 
+
+/*
+thanks to https://stackoverflow.com/users/2217862/jakub-jirutka 's answer
+at https://stackoverflow.com/questions/4098195/can-ordered-list-produce-result-that-looks-like-1-1-1-2-1-3-instead-of-just-1
+~~~~~~ tiered ordered lists ~~~~~~
+ */
+
+ol {
+    list-style-type : none;
+    counter-reset   : item;
+    margin          : 0;
+    padding         : 0;
+}
+
+ol > li {
+    display           : table;
+    counter-increment : item;
+    margin-bottom     : 0.6em;
+}
+
+ol > li:before {
+    content       : counters(item, ".") ". ";
+    display       : table-cell;
+    padding-right : 0.6em;
+}
+
+li ol > li {
+    margin : 0;
+}
+
+li ol > li:before {
+    content : counters(item, ".") " ";
+}
+
+p + ol {
+    margin-top : 1%;
+}
+
+/*
+^^^^^^ tiered ordered lists ^^^^^^
+ */
+
 .form-button {
     max-width : 100px;
 }
@@ -69,12 +111,6 @@ form {
 
 .ease-out:hover {
     background-color : rgba(128, 128, 128, 0.5);
-}
-
-.vertical-space-between {
-    display         : flex;
-    flex-direction  : column;
-    justify-content : space-between;
 }
 
 .side-by-side {
@@ -147,47 +183,6 @@ form {
     margin-top : 0;
     color      : red;
 }
-
-/*
-thanks to https://stackoverflow.com/users/2217862/jakub-jirutka 's answer
-at https://stackoverflow.com/questions/4098195/can-ordered-list-produce-result-that-looks-like-1-1-1-2-1-3-instead-of-just-1
-~~~~~~ tiered ordered lists ~~~~~~
- */
-
-ol {
-    list-style-type : none;
-    counter-reset   : item;
-    margin          : 0;
-    padding         : 0;
-}
-
-ol > li {
-    display           : table;
-    counter-increment : item;
-    margin-bottom     : 0.6em;
-}
-
-ol > li:before {
-    content       : counters(item, ".") ". ";
-    display       : table-cell;
-    padding-right : 0.6em;
-}
-
-li ol > li {
-    margin : 0;
-}
-
-li ol > li:before {
-    content : counters(item, ".") " ";
-}
-
-p + ol {
-    margin-top : 1%;
-}
-
-/*
-^^^^^^ tiered ordered lists ^^^^^^
- */
 
 /*
 ~~~~~~ link styles ~~~~~~
