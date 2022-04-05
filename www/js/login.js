@@ -36,13 +36,13 @@ function addAllEvents() {
         xhr.onreadystatechange = () => {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 const response = xhr.responseText;
-                target.innerHTML = response;
-                target.hidden = false;
                 if (response.startsWith("Bonjour")) {
                     target.style.color = "darkgreen";
                 } else {
                     target.style.color = "darkred";
                 }
+                target.innerHTML = response;
+                target.hidden = false;
             }
         }
     });
