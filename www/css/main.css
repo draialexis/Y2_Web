@@ -3,7 +3,6 @@ body {
 }
 
 html {
-    border           : solid 2px green;
     background-color : #E8EBEC;
 }
 
@@ -15,13 +14,12 @@ article {
     padding : 1.5%;
 }
 
-#ajax-target{
-    font-weight: bold;
+#ajax-target {
+    font-weight : bold;
 }
 
 .top {
     background-color : white;
-    border           : solid 2px pink;
     width            : 40%;
     margin           : auto;
     text-align       : center;
@@ -42,7 +40,6 @@ article {
 }
 
 .side-by-side {
-    border          : solid 2px red;
     display         : flex;
     flex-direction  : row; /*default, but just in case*/
     justify-content : space-evenly;
@@ -50,7 +47,6 @@ article {
 }
 
 .side-by-side > * {
-    border : solid 2px cyan;
     margin : 1%;
 }
 
@@ -63,7 +59,6 @@ article {
 
 .to-top {
     background-color : pink;
-    border           : solid 1px #777777;
     padding          : 6px;
     left             : 85%;
     top              : 25%;
@@ -168,7 +163,6 @@ p + ol {
 
 .list-option {
     min-width : 100px;
-    border    : solid 2px pink;
     position  : sticky;
     top       : 20px;
 }
@@ -190,22 +184,6 @@ p + ol {
     margin-top : 10%;
 }
 
-.newsletter {
-    border : solid 2px lime;
-}
-
-.newsletterbox {
-    border : solid 2px red;
-}
-
-.contour {
-    border : solid 2px orange;
-}
-
-.champ-recherche {
-    border : solid 2px cyan;
-}
-
 footer {
     width      : 100%;
     height     : 8%;
@@ -225,7 +203,6 @@ footer {
 
 @media all and (max-width : 768px) {
     .side-by-side {
-        border         : solid 2px red;
         display        : flex;
         flex-direction : column;
     }
