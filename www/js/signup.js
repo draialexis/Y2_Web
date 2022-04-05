@@ -43,15 +43,16 @@ function addAllEvents() {
     function parseMyDate(elm) {
         const now = new Date();
         const arr = elm.split("/");
-        const condition =
-            arr[0] >= 1 && arr[0] <= 31
-            && arr[1] - 1 >= 0 && arr[1] - 1 <= 11
-            && arr[2] <= now.getFullYear() && arr[2] > 1900;
-        if (condition) {
-            const date = new Date(arr[2], arr[1] - 1, arr[0]);
-            return date.getMilliseconds() === date.getMilliseconds();
-        }
-        return false;
+        const date = new Date(arr[2], arr[1] - 1, arr[0]);
+        console.log("date=" + date.getTime());
+        console.log("now=" + now.getTime());
+        console.log("date<=now:" + date.getTime() <= now.getTime());
+        return (
+            date.getMilliseconds() === date.getMilliseconds()   // true if the date was JS-valid
+            && arr[0] >= 1 && arr[0] <= 31                      // day is possible (not accounting for different months)
+            && arr[1] >= 1 && arr[1] <= 12                      // month is possible
+            && date.getTime() <= now.getTime() && arr[2] > 1900 // year is between 1900 and now
+        );
     }
 
     function checkDate(e) {
