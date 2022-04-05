@@ -16,6 +16,7 @@ function addAllEvents() {
     const userName = document.getElementById("username");
     const userPwd = document.getElementById("userpwd");
     const userEmail = document.getElementById("useremail");
+    const form = document.getElementById("signup-form");
 
     [checkNoEmpty, checkAll].forEach(fun =>
         lastName.addEventListener("input", fun)
@@ -111,9 +112,7 @@ function addAllEvents() {
         }
     }
 
-    const form = document.getElementById("signup-form");
-
-    form.addEventListener("submit", function (e) {
+    form.addEventListener("submit", (e) => {
         if (!checkAll()) {
             e.preventDefault();
             alert("Le formulaire présente un ou plusieurs problèmes");
@@ -121,4 +120,5 @@ function addAllEvents() {
             form.submit();
         }
     });
+    //TODO reset should clear all borders and warnings
 }
