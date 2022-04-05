@@ -71,7 +71,7 @@
                         </li>
                         <li><a class="link" href="#Principes">Principes techniques et syntaxe de CSS</a>
                             <ol>
-                                <li><a class="link" href="#Concepts">Concepts fondamentaux : boîtes et flux CSS</a></li>
+                                <li><a class="link" href="#Concepts">Concepts fondamentaux&nbsp;: boîtes et flux CSS</a></li>
                                 <li><a class="link" href="#Propriétés">Propriétés et valeurs</a></li>
                                 <li><a class="link" href="#Sélecteurs">Sélecteurs et blocs de règles</a></li>
                                 <li><a class="link" href="#CSSOO">CSSOO</a></li>
@@ -96,9 +96,10 @@
             </ol>
             <h2 id="Histoire-du-CSS">Histoire du CSS</h2>
             <h3 id="Un-concept">Un concept parmi d'autres, présent dès l'origine du web</h3>
-            <p>Le concept de feuille de style est présent dès l'origine du World Wide Web : le premier navigateur web
+            <p>Le concept de feuille de style est présent dès l'origine du World Wide Web&nbsp;: le premier navigateur web
                 WorldWideWeb permet de mettre en forme les documents à l'aide de ce qui serait aujourd'hui considéré
-                comme une « feuille de style utilisateur ». De même, les navigateurs Viola en 1992 et Harmony en 1993
+                comme une «&nbsp;feuille de style utilisateur&nbsp;». De même, les navigateurs Viola en 1992 et Harmony
+                en 1993
                 recourent à un mécanisme similaire permettant de déterminer le rendu des polices de caractères, des
                 couleurs ou de l'alignement du texte.
             </p>
@@ -110,32 +111,31 @@
             </p>
             <p>C'est dans ce contexte, en 1994-1995, que le tout nouveau Netscape Navigator introduit les premiers
                 éléments HTML de présentation à l'initiative de Marc Andreessen, tandis qu'apparaissent concurremment
-                les premières propositions de styles externes :
+                les premières propositions de styles externes&nbsp;:
             </p>
             <ul>
-                <li> Le « stylesheet proposal » de Pei Wei (créateur de Viola)</li>
-                <li> Les « Stylesheets for HTML » de Robert Raisch (O'Reilly)</li>
-                <li> les « Cascading HTML Style Sheets » (CHSS) d'Håkon Wium Lie</li>
+                <li> Le «&nbsp;stylesheet proposal&nbsp;» de Pei Wei (créateur de Viola)</li>
+                <li> Les «&nbsp;Stylesheets for HTML&nbsp;» de Robert Raisch (O'Reilly)</li>
+                <li> les «&nbsp;Cascading HTML Style Sheets&nbsp;» (CHSS) d'Håkon Wium Lie</li>
             </ul>
-            <p>L'apparition de CSS répond à une volonté de « proposer une alternative à l'évolution du <a class="link"
-                                                                                                          href="html.html">HTML</a>
-                d'un langage de structuration vers un langage de présentation ».
-            </p>
-            <p>Une troisième voie de développement est également ouverte à la même époque : le langage de transformation
+            <p>L'apparition de CSS répond à une volonté de «&nbsp;proposer une alternative à l'évolution du
+                <a class="link" href="html.html">HTML</a>
+                d'un langage de structuration vers un langage de présentation&nbsp;».</p>
+            <p>Une troisième voie de développement est également ouverte à la même époque&nbsp;: le langage de transformation
                 DSSSL des documents SGML, élaboré par James Clark, suggère la possibilité d'un langage de styles qui ne
                 soit pas seulement descriptif, et se rapproche d'un véritable langage de programmation. Cette voie est
-                suivie par Netscape, qui propose en 1996 au W3C les « JavaScript-Based Style Sheets » (JSSS),
+                suivie par Netscape, qui propose en 1996 au W3C les «&nbsp;JavaScript-Based Style Sheets&nbsp;» (JSSS),
                 implémentées par Netscape Navigator 4 en 1997.
             </p>
-            <p>Les origines des CSS sont donc liées à trois possibilités majeures :</p>
+            <p>Les origines des CSS sont donc liées à trois possibilités majeures&nbsp;:</p>
             <ul>
                 <li> HTML est-il un langage de structuration ou un langage mixte de mise en forme et de structuration
-                    ?
+                   &nbsp?
                 </li>
-                <li> Les choix de présentation de l'auteur doivent-ils avoir la primauté sur ceux de l'utilisateur ?
+                <li> Les choix de présentation de l'auteur doivent-ils avoir la primauté sur ceux de l'utilisateur&nbsp?
                 </li>
                 <li> La réponse aux besoins est-elle un langage de description de la mise en forme ou un langage de
-                    transformation ?
+                    transformation&nbsp?
                 </li>
             </ul>
             <h3 id="Les-premiers">Les premiers développements</h3>
@@ -148,53 +148,59 @@
                 troisième conférence WWW en 1995.
             </p>
             <p>Parallèlement, Bert Bos, qui travaillait alors sur le navigateur Argo, et qui avait soumis au W3C son
-                propre projet « Stream-based Style Sheet Proposal » (SSP), décide de joindre ses efforts à ceux d'Håkon
-                Lie. SSP ayant été développé avec l'idée d'être applicable non seulement à <a class="link"
-                                                                                              href="html.html">HTML</a>,
-                mais aussi à d'autres langages de balisage, Bert Bos et Håkon Lie reprennent cet objectif, et en font
-                une des caractéristiques clés de ce qui devient alors CSS proprement dit.
+                propre projet «&nbsp;Stream-based Style Sheet Proposal&nbsp;» (SSP), décide de joindre ses efforts à
+                ceux d'Håkon Lie. SSP ayant été développé avec l'idée d'être applicable non seulement à
+                <a class="link" href="html.html">HTML</a>, mais aussi à d'autres langages de balisage, Bert Bos et Håkon
+                Lie reprennent cet objectif, et en font une des caractéristiques clés de ce qui devient alors CSS
+                proprement dit.
             </p>
-            <p>Un autre aspect de CSS s'avère alors déterminant face aux alternatives existantes : CSS est le premier
-                langage à inclure l'idée de « cascade » (feuille de style en cascade), c'est-à-dire la possibilité pour
-                le style d'un document d'être hérité à partir de plusieurs « feuilles de style ». Cela permet d'arbitrer
-                entre plusieurs sources concurrentes de mise en forme d'un élément, et répond donc à la nécessité de
+            <p>Un autre aspect de CSS s'avère alors déterminant face aux alternatives existantes&nbsp;: CSS est le premier
+                langage à inclure l'idée de «&nbsp;cascade&nbsp;» (feuille de style en cascade), c'est-à-dire la
+                possibilité pour le style d'un document d'être hérité à partir de plusieurs «&nbsp;feuilles de style&nbsp;».
+                Cela permet
+                d'arbitrer entre plusieurs sources concurrentes de mise en forme d'un élément, et répond donc à la
+                nécessité de
                 composer entre les préférences stylistiques des auteurs et des utilisateurs.
             </p>
             <p>Le World Wide Web Consortium (W3C) devient opérationnel en 1995, et la liste de discussion www-style est
-                alors créée. La même année se tient à Paris un « W3C style sheet workshop » décisif pour l'avenir des
+                alors créée. La même année se tient à Paris un «&nbsp;W3C style sheet workshop&nbsp;» décisif pour
+                l'avenir des
                 CSS. Y est notamment affirmée la volonté de conserver les feuilles de style sous une forme simple, ce
                 qui exclut l'hypothèse JSSS de Netscape. Par ailleurs, Thomas Reardon (Microsoft) y annonce le support à
-                venir de CSS dans les futures versions d'Internet Explorer : dès lors, lorsque le W3C crée à la fin de
-                l'année le « HTML Editorial Review Board » (HTML ERB) pour ratifier les futures spécifications
+                venir de CSS dans les futures versions d'Internet Explorer&nbsp;: dès lors, lorsque le W3C crée à la fin de
+                l'année le «&nbsp;HTML Editorial Review Board&nbsp;» (HTML ERB) pour ratifier les futures spécifications
                 <a class="link" href="html.html">HTML</a>, DOM et CSS, Netscape, représenté par Lou Montulli, se rallie
                 finalement au projet CSS mené par Bert Bos et Håkon Lie.
             </p>
             <h3 id="Vers-une">Vers une maturation difficile</h3>
             <p> Contrairement aux logiciels, les spécifications CSS ne sont pas développées par versions successives,
-                qui permettraient à un navigateur de se référer à une version en particulier. CSS est développé par «
-                niveaux », ce qui contraint chaque nouveau niveau à intégrer le précédent, et chaque implémentation à
-                être compatible avec la précédente : CSS1 est donc développé pour être un sous-ensemble de CSS2, qui est
+                qui permettraient à un navigateur de se référer à une version en particulier. CSS est développé par «&nbsp;niveaux&nbsp;», ce qui contraint chaque nouveau niveau à intégrer le précédent, et chaque implémentation
+                à
+                être compatible avec la précédente&nbsp;: CSS1 est donc développé pour être un sous-ensemble de CSS2, qui est
                 lui-même développé pour être un sous-ensemble de CSS3. Ceci explique en partie la lenteur de
                 l'avancement normatif de CSS.
             <h4 id="CSS1">CSS1, des implémentations difficiles pendant la guerre des navigateurs</h4>
             <p> La spécification CSS1 finale est publiée le 17 décembre 1996, et définit une cinquantaine de propriétés.
-                CSS1 se définit comme un « mécanisme de feuille de style simple, permettant aux auteurs et aux lecteurs
-                d'attacher des styles (…) au document <a class="link" href="html.html">HTML</a> ». Cette simplicité se
+                CSS1 se définit comme un «&nbsp;mécanisme de feuille de style simple, permettant aux auteurs et aux
+                lecteurs
+                d'attacher des styles (…) au document <a class="link" href="html.html">HTML</a>&nbsp;». Cette simplicité
+                se
                 traduit par le choix d'un langage qui peut être aisément lu et écrit directement par ses utilisateurs
                 humains, et d'une terminologie conforme aux usages courants dans la publication informatique. Le choix
                 éventuel d'exprimer CSS dans une syntaxe XML ou SGML, régulièrement évoquée pour éviter l'implémentation
                 d'un nouveau mode d'analyse syntaxique, est donc définitivement écartée.
             </p>
-            <p>CSS1 ne décrit pas uniquement sa propre grammaire : ce premier niveau décrit en effet une grammaire
+            <p>CSS1 ne décrit pas uniquement sa propre grammaire&nbsp;: ce premier niveau décrit en effet une grammaire
                 destinée à permettre aux niveaux ultérieurs d'ajouter de nouvelles fonctionnalités, tout en autorisant
                 la lecture de ces futures feuilles de styles par les implémentations d'origine. Ces nouvelles
                 fonctionnalités ne seront pas comprises par les implémentations d'origine, mais pourront être
                 identifiées en tant que telles, et ignorées. CSS garantit ainsi sa compatibilité descendante.
             </p>
-            <p>CSS1 définit essentiellement les propriétés de rendu typographique du texte : fontes (polices), couleur,
+            <p>CSS1 définit essentiellement les propriétés de rendu typographique du texte&nbsp;: fontes (polices), couleur,
                 taille des caractères, graisse, espacements, bordures et gestion des marqueurs de liste.
             </p>
-            <p>Il n'est donc pas encore question de « mise en page » : la propriété <code>float</code>, qui sera par la
+            <p>Il n'est donc pas encore question de «&nbsp;mise en page&nbsp;»&nbsp;: la propriété <code>float</code>, qui
+                sera par la
                 suite massivement utilisée pour la mise en page CSS globale des designs web, n'est alors conçue que
                 comme un moyen de placer localement, côte à côte, une portion réduite du contenu, tel qu'une image, et
                 le reste du texte. Compte tenu des implémentations problématiques de CSS1, le détournement de l'élément
@@ -207,7 +213,7 @@
                 nouveau moteur de rendu, Trident, à l'origine du support croissant mais problématique de CSS dans les
                 différentes versions de ce navigateur sous Windows, jusqu'à Internet Explorer 7 inclus.
             </p>
-            <p>Netscape Navigator 4.0 suit le mouvement en 1997, malgré ses réticences historiques vis-à-vis de CSS :
+            <p>Netscape Navigator 4.0 suit le mouvement en 1997, malgré ses réticences historiques vis-à-vis de CSS&nbsp;:
                 dans le contexte de la guerre des navigateurs, il s'agit alors principalement d'éviter que Microsoft ne
                 puisse s'affirmer comme le navigateur le plus conforme. Cependant, cette implémentation précipitée,
                 basée sur des méthodes <a class="link" href="js.html">JavaScript</a> internes, se révèle finalement
@@ -217,20 +223,23 @@
             </p>
             <p>En 1998, alors que s'achève la guerre des navigateurs opposant Netscape et Microsoft, Opera 3.5, dont
                 Håkon Lie est entre-temps devenu le directeur technique, parvient à une implémentation plus complète de
-                CSS1, facilitée par la publication de la première « Test suite for Cascading Style Sheets (CSS) Level 1
-                » créée principalement par Eric Meyer pour le W3C. La présence de ces suites de test se révèle un atout
+                CSS1, facilitée par la publication de la première «&nbsp;Test suite for Cascading Style Sheets (CSS)
+                Level 1
+                &nbsp;» créée principalement par Eric Meyer pour le W3C. La présence de ces suites de test se révèle un
+                atout
                 majeur à la fois pour les implémentations dans les navigateurs et pour l'appropriation des techniques
                 CSS par les auteurs (en fournissant des exemples détaillés des propriétés et de leurs valeurs).
             </p>
             <p>Enfin, sous l'impulsion de Tantek Çelik, Internet Explorer 5.0 pour Macintosh lancé en mars 2000, basé
                 sur Tasman, un moteur de rendu spécifique sans rapport avec Trident, est le premier navigateur à
                 supporter complètement (à plus de 99 %) CSS1. Pour assurer la compatibilité avec les précédentes
-                pratiques de codage propre à chaque implémentation (la « soupe de balises »), et permettre un affichage
+                pratiques de codage propre à chaque implémentation (la «&nbsp;soupe de balises&nbsp;»), et permettre un
+                affichage
                 correct des documents web qu'ils soient respectueux ou non des standards CSS et <a class="link"
                                                                                                    href="html.html">HTML</a>,
                 il est également le premier à mettre en œuvre la technique du doctype switching. Adoptée par la suite
                 par tous les navigateurs, celle-ci devient par la suite l'une des clés de l'implémentation progressive
-                de CSS : elle permet en effet au navigateur de conserver d'anciennes implémentations propriétaires pour
+                de CSS&nbsp;: elle permet en effet au navigateur de conserver d'anciennes implémentations propriétaires pour
                 des raisons de compatibilité, tout en ayant la possibilité d'opter, en fonction de la syntaxe de la
                 déclaration de type de document de la page, pour un mode de rendu conforme à de nouvelles
                 implémentations standards.
@@ -240,13 +249,14 @@
                 de Netscape à l'issue de la guerre des navigateurs, le renouveau qui s'ensuit via le projet Mozilla,
                 l'apparition d'IE5 Mac, et à un moindre titre l'évolution d'Internet Explorer Windows 5.x, amorcent
                 cependant au début des années 2000 une nouvelle étape dans l'évolution des pratiques de conception des
-                sites web par les auteurs : ces navigateurs permettent en effet de montrer que les pratiques historiques
+                sites web par les auteurs&nbsp;: ces navigateurs permettent en effet de montrer que les pratiques historiques
                 datant de l'époque de la guerre des navigateurs, mêlant structure et présentation, peuvent réellement
                 être abandonnées au profit d'une démarche fondée sur les feuilles de styles et le respect plus général
                 des standards du web (au sens d'<a class="link" href="html.html">HTML</a> et CSS). Jeffrey Zeldman,
                 cofondateur du Web Standards Project et fondateur d’A List Apart en 1998, apparaît alors comme la figure
                 emblématique de ce mouvement de promotion des standards. Il est également l'inspirateur d'une démarche
-                de conception « hybride », tirant profit des techniques CSS tout en demeurant temporairement dans le
+                de conception «&nbsp;hybride&nbsp;», tirant profit des techniques CSS tout en demeurant temporairement
+                dans le
                 cadre d'une mise en forme des documents fondée sur les tableaux de présentation.
             </p>
             <h4 id="CSS2">CSS2, des ambitions précipitées</h4>
@@ -258,7 +268,7 @@
             <p>Publié comme une recommandation en mai 1998, le second niveau de CSS étend considérablement les
                 possibilités théoriques des feuilles de styles en cascade, avec en particulier environ 70 propriétés
                 supplémentaires. À la mise en forme typographique du texte initiée avec CSS1 s'ajoutent en effet
-                notamment :
+                notamment&nbsp;:
             </p>
             <ul>
                 <li> la déclinaison en styles propres aux différents média dans lesquels une page web peut être
@@ -273,9 +283,9 @@
                     mise en forme d'un site.
                 </li>
             </ul>
-            <p>Cependant, cette richesse fonctionnelle ne rencontre qu'un écho limité dans ses implémentations :</p>
+            <p>Cependant, cette richesse fonctionnelle ne rencontre qu'un écho limité dans ses implémentations&nbsp;:</p>
             <ul>
-                <li> La déclinaison par média est en partie un échec : les styles de rendus vocaux restent théoriques
+                <li> La déclinaison par média est en partie un échec&nbsp;: les styles de rendus vocaux restent théoriques
                     faute de prise en compte par les navigateurs vocaux et lecteurs d'écran. Ils s'avèrent par ailleurs
                     incompatibles avec le standard d'interaction vocale SSML. Il en est de même de l'affichage et de
                     l'impression braille. Les styles d'impression ne sont que très partiellement adoptés par les
@@ -293,12 +303,14 @@
                     préserver leurs intérêts commerciaux.
                 </li>
             </ul>
-            <p> Plusieurs causes sont évoquées pour expliquer ces difficultés et la lenteur des implémentations CSS2 :
+            <p> Plusieurs causes sont évoquées pour expliquer ces difficultés et la lenteur des implémentations CSS2&nbsp;:
             </p>
             <ul>
-                <li> La « sous-spécification ou quasi-inimplémentabilité de certaines sections ». Håkon Lie souligne
+                <li> La «&nbsp;sous-spécification ou quasi-inimplémentabilité de certaines sections&nbsp;». Håkon Lie
+                    souligne
                     lui-même dans sa thèse sur les feuilles de style en cascade, en 2005, les risques de non
-                    implémentation ou de perte d'interopérabilité liés à des « fonctionnalités excessives », telles que
+                    implémentation ou de perte d'interopérabilité liés à des «&nbsp;fonctionnalités excessives&nbsp;»,
+                    telles que
                     les marqueurs de liste, les repères de coupe pour l'impression ou le téléchargement de polices de
                     caractères. De même, la complexité des sélecteurs avancés est difficilement conciliable avec la
                     gestion de la cascade;
@@ -307,18 +319,19 @@
                     répondaient pas nécessairement à leurs objectifs stratégiques ou commerciaux;
                 </li>
                 <li> L'interruption du développement d'Internet Explorer, navigateur dominant du marché, de 2001 à 2006.
-                    Håkon Lie écrivait en effet en 2005 : « 2001 est un tournant pour CSS. C'est l'année où Microsoft
+                    Håkon Lie écrivait en effet en 2005&nbsp;: «&nbsp;2001 est un tournant pour CSS. C'est l'année où
+                    Microsoft
                     produit Internet Explorer 6.0 qui offre une prise en charge fonctionnelle, bien qu'incomplète et
                     buggée, de CSS […] Aucun autre navigateur n'a été capable de concurrencer WinIE en ce qui concerne
                     le nombre d'utilisateurs. WinIE a, de ce fait, déterminé le sous-ensemble de CSS utilisable par les
                     auteurs. La prise en charge limitée de CSS par WinIE, combinée à un monopole de fait en matière de
-                    navigateur web, est actuellement le plus grave problème du déploiement de CSS. »
+                    navigateur web, est actuellement le plus grave problème du déploiement de CSS.&nbsp;»
                 </li>
             </ul>
             <h4 id="CSS-2.1">CSS 2.1, retour aux implémentations</h4>
             <p> Les retours d'implémentation de CSS2 conduisent le groupe de travail CSS du W3C à rédiger à partir de
-                2001 une version révisée CSS 2.1 (« CSS Level 2, Revision 1 »), sur la base de ce qui était
-                effectivement adopté par les différents navigateurs. Les objectifs de cette révision sont :
+                2001 une version révisée CSS 2.1 («&nbsp;CSS Level 2, Revision 1&nbsp;»), sur la base de ce qui était
+                effectivement adopté par les différents navigateurs. Les objectifs de cette révision sont&nbsp;:
             </p>
             <ul>
                 <li> de maintenir la compatibilité avec les parties de CSS2 qui sont largement acceptées et mises en
@@ -342,19 +355,20 @@
                 </li>
             </ul>
             <p>CSS 2.1 corrige CSS2 sur de nombreux points de détail, en supprime certaines sections en tout ou partie
-                (les styles vocaux définis sous le type de media « aural », les styles d'impression, les polices
+                (les styles vocaux définis sous le type de media «&nbsp;aural&nbsp;», les styles d'impression, les
+                polices
                 téléchargeables, dont les définitions plus probantes sont repoussées à la future CSS3), et l'explicite à
                 partir des constats mis à jour lors des implémentations (la gestion avancée des blocs flottants via les
-                « contextes de formatage »).
+                «&nbsp;contextes de formatage&nbsp;»).
             </p>
             <p>Après avoir connu 8 versions successives, CSS 2.1 est en juillet 2007 une recommandation candidate,
                 c'est-à-dire le standard que doivent suivre les implémentations.
             </p>
-            <p>En 2007, aucun navigateur n'a en effet achevé l'intégration de CSS 2.1 : celle-ci serait implémentée à 56
+            <p>En 2007, aucun navigateur n'a en effet achevé l'intégration de CSS 2.1&nbsp;: celle-ci serait implémentée à 56
                 % par Internet Explorer 7, 91 % par Firefox 2 et 94 % par Opera 9. Par ailleurs, seule une partie des
                 navigateurs graphiques ont passé avec succès ou retenu comme objectif le test Acid2, lancé en 2005 par
                 le Web Standards Project, à l'initiative d'Håkon Lie, pour favoriser notamment l'implémentation d'un
-                choix de fonctionnalités CSS 2.1 considérées comme les principales avancées nécessaires : positionnement
+                choix de fonctionnalités CSS 2.1 considérées comme les principales avancées nécessaires&nbsp;: positionnement
                 d'éléments lors de l'affichage, généralisation du modèle de rendu en tableau à tous les éléments,
                 contenu généré via CSS. L'utilisation professionnelle de CSS reste donc limitée à un sous-ensemble
                 arbitraire de celle-ci, déterminé par les implémentations communes.
@@ -363,29 +377,31 @@
             <p> Le développement du troisième niveau des feuilles de styles en cascade commence dès 1999, parallèlement
                 à celui de CSS 2.1.
             </p>
-            <p>CSS3 devient « modulaire », afin de faciliter ses mises à jour, mais aussi son implémentation par des
+            <p>CSS3 devient «&nbsp;modulaire&nbsp;», afin de faciliter ses mises à jour, mais aussi son implémentation
+                par des
                 agents utilisateurs aux capacités et aux besoins de plus en plus variés (navigateurs graphiques,
                 navigateurs pour mobiles, navigateurs vocaux). Les navigateurs peuvent ainsi implémenter des
                 sous-ensembles de CSS3.
             </p>
             <p>Dès lors, le degré d'avancement de CSS3 varie selon les modules et le degré de priorité qui leur a été
                 donné par le groupe de travail CSS. En 2007, les modules les plus avancés (recommandations candidates)
-                concernent :
+                concernent&nbsp;:
             </p>
             <ul>
                 <li> la mise en forme des annotations ruby</li>
-                <li> la négociation de style entre serveurs et agents utilisateurs (« Media Queries »)</li>
+                <li> la négociation de style entre serveurs et agents utilisateurs («&nbsp;Media Queries&nbsp;»)</li>
                 <li> le rendu web TV</li>
                 <li> la gestion des couleurs</li>
                 <li> la prise en compte de la configuration de l'interface utilisateur.</li>
             </ul>
             <p>Dans d'autres cas, des modules peuvent atteindre le stade de recommandation candidate, mais être par la
                 suite ramené au stade de document de travail en raison des difficultés mises à jour à la suite de
-                l'appel à implémentation. C'est par exemple le cas du module de typographie « CSS Text ».
+                l'appel à implémentation. C'est par exemple le cas du module de typographie «&nbsp;CSS Text&nbsp;».
             </p>
-            <p>De même, les implémentations varient selon les stratégies et les besoins des différents navigateurs :</p>
+            <p>De même, les implémentations varient selon les stratégies et les besoins des différents navigateurs&nbsp;:</p>
             <ul>
-                <li> Opera implémente par exemple les « Media Queries », qui répondent à ses besoins spécifiques de
+                <li> Opera implémente par exemple les «&nbsp;Media Queries&nbsp;», qui répondent à ses besoins
+                    spécifiques de
                     navigateur multiplate-forme embarqué sur des clients ayant des capacités d'affichage très variées.
                 </li>
                 <li> Firefox, davantage orienté vers le navigateur exploité en tant que plateforme, privilégie en
@@ -396,14 +412,15 @@
                 cascade.
             </p>
             <p>Certains membres du groupe de travail CSS, ainsi que des développeurs web, ont soulevé le problème de la
-                lenteur de l'avancement de CSS3 :
+                lenteur de l'avancement de CSS3&nbsp;:
             </p>
             <ul>
-                <li> Pour Ian Hickson, « le groupe de travail CSS est aujourd'hui atteint de dysfonctionnements
-                    chroniques » : son caractère trop fermé le prive des contributeurs nécessaires pour l'édition des
+                <li> Pour Ian Hickson, «&nbsp;le groupe de travail CSS est aujourd'hui atteint de dysfonctionnements
+                    chroniques&nbsp;»&nbsp;: son caractère trop fermé le prive des contributeurs nécessaires pour l'édition
+                    des
                     spécifications, leur relecture ou encore la rédaction des suites de test;
                 </li>
-                <li> Pour Daniel Glazman, cette lenteur s'explique par 3 erreurs originelles : le choix de développer
+                <li> Pour Daniel Glazman, cette lenteur s'explique par 3 erreurs originelles&nbsp;: le choix de développer
                     CSS par niveau et non pas par versions successives, la priorité accordée à la révision CSS 2.1 au
                     détriment de CSS3, le nombre excessif de modules CSS3 et la complexité des propriétés qui y sont
                     développées.
@@ -432,13 +449,13 @@
                 fournit un certain nombre de bénéfices, permettant d'améliorer l'accessibilité, de changer plus
                 facilement de présentation, et de réduire la complexité de l'architecture d'un document.
             </p>
-            <p>Ainsi, les avantages des feuilles de style sont multiples :</p>
+            <p>Ainsi, les avantages des feuilles de style sont multiples&nbsp;:</p>
             <ul>
                 <li> La structure du document et la présentation peuvent être gérées dans des fichiers séparés;</li>
                 <li> La conception d'un document se fait dans un premier temps sans se soucier de la présentation, ce
                     qui permet d'être plus efficace;
                 </li>
-                <li> Dans le cas d'un site web, la présentation est uniformisée : les documents (pages
+                <li> Dans le cas d'un site web, la présentation est uniformisée&nbsp;: les documents (pages
                     <a href="html.html">HTML</a>) font référence aux mêmes feuilles de styles. Cette caractéristique
                     permet de plus une remise en forme rapide de l'aspect visuel;
                 </li>
@@ -455,20 +472,20 @@
                 (type de moniteur ou de dispositif vocal), de celles du navigateur (texte ou graphique), ainsi que des
                 préférences de son utilisateur.
             </p>
-            <p>Les feuilles de styles peuvent être différenciées pour les médias suivants, selon CSS2.1 :</p>
+            <p>Les feuilles de styles peuvent être différenciées pour les médias suivants, selon CSS2.1&nbsp;:</p>
             <ul>
-                <li><code>all</code> : quel que soit le média ;</li>
-                <li><code>screen</code> : écrans d'ordinateur de bureau ;</li>
-                <li><code>print</code> : pour l'impression papier ;</li>
-                <li><code>handheld</code> : pour l'impression papier ;</li>
-                <li><code>projection</code> : quand le document est projeté ;</li>
-                <li><code>tv</code> : quand le document est affiché sur un appareil de type télévision ;</li>
-                <li><code>speech</code> : pour le rendu via une synthèse vocale (remplaçant <code>aural</code>,
+                <li><code>all</code>&nbsp;: quel que soit le média ;</li>
+                <li><code>screen</code>&nbsp;: écrans d'ordinateur de bureau ;</li>
+                <li><code>print</code>&nbsp;: pour l'impression papier ;</li>
+                <li><code>handheld</code>&nbsp;: pour l'impression papier ;</li>
+                <li><code>projection</code>&nbsp;: quand le document est projeté ;</li>
+                <li><code>tv</code>&nbsp;: quand le document est affiché sur un appareil de type télévision ;</li>
+                <li><code>speech</code>&nbsp;: pour le rendu via une synthèse vocale (remplaçant <code>aural</code>,
                     initialement prévu par CSS2.0 puis déprécié par CSS2.1).
                 </li>
             </ul>
             <p>D'autres types de media sont théoriquement prévus par la spécification CSS2.1, mais ne sont pas
-                implémentés par les agents utilisateurs : <code>braille</code> et <code>embossed</code> pour les
+                implémentés par les agents utilisateurs&nbsp;: <code>braille</code> et <code>embossed</code> pour les
                 tablettes brailles et les embosseuses, ainsi que <code>tty</code> pour les téléscripteurs.
             </p>
             <p>Dans chaque média, les styles de présentation déterminés par l'auteur du document se combinent avec ceux
@@ -476,42 +493,46 @@
                 personnelle.
             </p>
             <p>Les capacités du récepteur peuvent être prises en compte par les auteurs, à destination des agents
-                utilisateurs implémentant le module CSS3 « media queries » : celui-ci permet de conditionner la prise en
+                utilisateurs implémentant le module CSS3 «&nbsp;media queries&nbsp;»&nbsp;: celui-ci permet de conditionner
+                la prise en
                 compte d'une feuille de style à des contraintes concernant notamment la résolution ou la capacité de
                 restitution des couleurs.
             </p>
             <h4 id="Cascade-des-styles">Cascades des styles</h4>
-            <p> La « cascade » est la combinaison de différentes sources de styles appliqués à un même document, selon
-                leur degré respectif de priorité. Différents modes de cascade peuvent se combiner :
+            <p> La «&nbsp;cascade&nbsp;» est la combinaison de différentes sources de styles appliqués à un même
+                document, selon
+                leur degré respectif de priorité. Différents modes de cascade peuvent se combiner&nbsp;:
             </p>
             <ul>
                 <li> par origine des styles, issus de l'agent utilisateur, de l'auteur et de l'utilisateur. La priorité
                     supérieure accordée aux styles de l'utilisateur est un des facteurs principaux de l'accessibilité
                     des documents présentés à l'aide de CSS;
                 </li>
-                <li> par média : une feuille de style générique peut s'appliquer à plusieurs média de restitution
+                <li> par média&nbsp;: une feuille de style générique peut s'appliquer à plusieurs média de restitution
                     (affichage à l'écran, impression, projection) et être combinée avec des feuilles propres à chaque
                     média;
                 </li>
-                <li> selon l'architecture d'un ensemble de documents web : une feuille de style générique peut
+                <li> selon l'architecture d'un ensemble de documents web&nbsp;: une feuille de style générique peut
                     s'appliquer à la totalité des pages d'un site web, être combinée avec des feuilles propres à chaque
                     rubrique de celui-ci, ainsi qu'avec des styles propres à telle ou telle page spécifique;
                 </li>
-                <li> selon l'architecture des feuilles elles-mêmes : une feuille de style externe au document peut être
+                <li> selon l'architecture des feuilles elles-mêmes&nbsp;: une feuille de style externe au document peut être
                     combinée à une feuille de style interne et à des styles appliqués directement à chaque élément qui
-                    le compose (styles « en ligne »). Une feuille de style peut également importer une ou plusieurs
+                    le compose (styles «&nbsp;en ligne&nbsp;»). Une feuille de style peut également importer une ou
+                    plusieurs
                     autres feuilles externes.
                 </li>
             </ul>
             <h3 id="Principes">Principes techniques et syntaxe de CSS</h3>
-            <h4 id="Concepts">Concepts fondamentaux : boîte et flux CSS</h4>
+            <h4 id="Concepts">Concepts fondamentaux&nbsp;: boîte et flux CSS</h4>
             <p> Le rendu d'un document stylé est déterminé par les concepts de boîte et de flux. Le moteur de rendu CSS
-                établit une « structure de formatage » reflétant l'arbre logique du document. Chaque élément de cette
+                établit une «&nbsp;structure de formatage&nbsp;» reflétant l'arbre logique du document. Chaque élément
+                de cette
                 structure génère une ou plusieurs zones dotées de propriétés d'affichage ou de rendu vocal
                 paramétrables. L'affichage ou la lecture s'effectuent à partir du flux des boîtes successivement
                 générées pour chaque élément tel qu'il apparaît dans l'ordre linéaire de la structure de formatage.
             </p>
-            <p>Selon les cas de figures, ces différents types de boîtes :</p>
+            <p>Selon les cas de figures, ces différents types de boîtes&nbsp;:</p>
             <ul>
                 <li> peuvent avoir des propriétés de marges, de bordure, d'arrière-plan, de largeur ou de hauteur, etc.
                     Dans un rendu vocal, des propriétés équivalentes permettent de déterminer des pauses dans la lecture
@@ -526,22 +547,23 @@
             <p> Les caractéristiques applicables aux boîtes CSS sont exprimées sous forme de couples
                 <code>propriété: valeur</code>.
             </p>
-            <p>Les propriétés sont libellées à l'aide de mots-outils anglais tels que « width » (largeur), « font-size »
-                (taille de la police de caractères) ou « voice-volume » (volume sonore du rendu vocal).
+            <p>Les propriétés sont libellées à l'aide de mots-outils anglais tels que «&nbsp;width&nbsp;» (largeur), «&nbsp;font-size&nbsp;»
+                (taille de la police de caractères) ou «&nbsp;voice-volume&nbsp;» (volume sonore du rendu vocal).
             </p>
             <p>Les valeurs peuvent être selon les cas exprimées à l'aide d'unités normalisées par ailleurs, ou de
                 mots-clés propres à CSS. Par exemple, une couleur de fond ou de texte peut être exprimée à l'aide du
                 modèle RGB ou des mots clés black, blue, fuchsia, etc.
             </p>
-            <p>Les propriétés CSS ont été établies selon un compromis entre deux contraintes opposées : faciliter la
+            <p>Les propriétés CSS ont été établies selon un compromis entre deux contraintes opposées&nbsp;: faciliter la
                 lecture des feuilles de styles par les agents utilisateurs en multipliant les propriétés individuelles,
                 ou faciliter leur écriture par les auteurs en recourant à un nombre plus réduit de propriétés combinées.
                 Par exemple, la position d'une image d'arrière-plan est déterminée par une propriété unique (<code>background-position</code>),
                 combinant les deux valeurs d'abscisse et d'ordonnée, et non par deux propriétés distinctes. De même, il
                 existe des propriétés raccourcies permettant aux auteurs de simplifier l'écriture d'une série de
-                propriétés : le raccourci <code>font</code> permet, par exemple, de résumer en une seule règle
+                propriétés&nbsp;: le raccourci <code>font</code> permet, par exemple, de résumer en une seule règle
                 l'ensemble des propriétés de police de caractères, de taille, de hauteur de ligne, de casse, de graisse
-                et d'italique. Mais l'utilisation du caractère « / » rend beaucoup plus complexe l'analyse syntaxique
+                et d'italique. Mais l'utilisation du caractère «&nbsp;/&nbsp;» rend beaucoup plus complexe l'analyse
+                syntaxique
                 des feuilles de styles par les agents utilisateurs.
             </p>
             <h4 id="Sélecteurs">Sélecteurs et bloc de règles</h4>
@@ -562,10 +584,10 @@
             <p> CSS ambitionnait initialement l'indépendance entre structure et présentation d'un document.</p>
             <p>Ainsi, le site du CSS Zen Garden, créé en 2003 par Dave Shea, se veut la démonstration de la possibilité
                 de modifier librement le rendu affiché d'une même page web, uniquement grâce à CSS et sans aucune
-                modification de son code <a class="link" href="html.html">HTML</a> : il présente, en décembre 2006, 986
+                modification de son code <a class="link" href="html.html">HTML</a>&nbsp;: il présente, en décembre 2006, 986
                 designs différents de sa page d'accueil. Cependant, la plupart de ces designs reposent en tout ou partie
                 sur le remplacement du contenu textuel de la page par des images CSS qui le reproduisent en enrichissant
-                son aspect : la liberté graphique repose toujours partiellement sur la transformation du texte en image.
+                son aspect&nbsp;: la liberté graphique repose toujours partiellement sur la transformation du texte en image.
                 D'autre part, le CSS Zen Garden reste un exercice de style limité à un document unique, à la structure
                 doublée d'éléments et attributs sémantiquement neutres, qui ne servent qu'à donner appui à des
                 sélecteurs CSS.
@@ -579,7 +601,7 @@
                 création de patrons <a class="link" href="html.html">HTML</a> CSS que s'exploite cette indépendance
                 potentielle des styles envers la structure spécifique des documents.
             </p>
-            <p>Plus généralement :</p>
+            <p>Plus généralement&nbsp;:</p>
             <ul>
                 <li> les difficultés et le manque d'implémentation d'une partie des propriétés CSS limitent la liberté
                     de mise en page, et conduisent à l'utilisation de propriétés contraignantes quant à la structure <a
@@ -598,24 +620,24 @@
             </ul>
             <h3 id="Accessibilité">Accessibilité</h3>
             <p> CSS favorise l'accessibilité d'une page web en donnant en dernier ressort à l'utilisateur le contrôle du
-                rendu d'un document dans son navigateur : il est ainsi possible de l'adapter à des contraintes ou à des
+                rendu d'un document dans son navigateur&nbsp;: il est ainsi possible de l'adapter à des contraintes ou à des
                 préférences concernant par exemple la taille d'affichage des caractères ou les couleurs. En séparant
                 structure et présentation, CSS favorise également l'écriture de documents structurés de manière
-                sémantique, potentiellement plus exploitables par les aides techniques : la liberté de présentation des
+                sémantique, potentiellement plus exploitables par les aides techniques&nbsp;: la liberté de présentation des
                 éléments de titrage permet par exemple de respecter strictement l'ordre hiérarchique formel de ceux-ci,
                 ce qui permet en retour aux aides techniques d'en établir une table des matières navigable. Enfin, en
                 donnant aux auteurs les moyens d'enrichir la mise en forme du texte, CSS permet de limiter le recours
                 aux textes mis en images.
             </p>
-            <p>Cependant, certaines utilisations de CSS peuvent également compromettre l'accessibilité du contenu :</p>
+            <p>Cependant, certaines utilisations de CSS peuvent également compromettre l'accessibilité du contenu&nbsp;:</p>
             <ul>
                 <li> en substituant à celui-ci des pseudo-contenus qui ne sont accessibles qu'aux utilisateurs qui
-                    peuvent percevoir le rendu CSS visuel : c'est le cas par exemple des informations qui seraient
+                    peuvent percevoir le rendu CSS visuel&nbsp;: c'est le cas par exemple des informations qui seraient
                     véhiculées par des images d'arrière-plan ;
                 </li>
                 <li> en bouleversant la cohérence nécessaire entre l'ordre linéaire de l'information dans le contenu
                     structuré et l'ordre visuel du rendu CSS affiché. Les aides techniques telles que les lecteurs
-                    d'écran n'ont en effet accès qu'à cet ordre linéaire : une information qui ne prendrait son sens
+                    d'écran n'ont en effet accès qu'à cet ordre linéaire&nbsp;: une information qui ne prendrait son sens
                     qu'en fonction de son positionnement CSS n'est pas compréhensible pour leurs utilisateurs ;
                 </li>
                 <li> dans une démarche d'accessibilité fondée sur la pertinence de la structure <a class="link"
@@ -634,7 +656,7 @@
             <h3 id="Simplicité">Simplicité</h3>
             <p> CSS répond à une volonté de disposer d'un format de présentation simple, tant dans ses fonctionnalités
                 que dans sa syntaxe, afin d'en favoriser la manipulation directe par les auteurs et les utilisateurs.
-                Cependant, cette simplicité est remise en cause par plusieurs facteurs :
+                Cependant, cette simplicité est remise en cause par plusieurs facteurs&nbsp;:
             <ul>
                 <li> La difficulté à déterminer et à contrôler le résultat de la cascade lorsque les sources de styles
                     se multiplient. Le rendu final d'un contenu précis dépend de la combinaison de plusieurs feuilles et

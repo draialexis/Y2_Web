@@ -49,6 +49,10 @@ form {
     width : 250px;
 }
 
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
 
 /*
 thanks to https://stackoverflow.com/users/2217862/jakub-jirutka 's answer
