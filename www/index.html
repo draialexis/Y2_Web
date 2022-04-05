@@ -1,47 +1,31 @@
 <!doctype html>
 <html lang="fr">
-
 <head>
     <meta charset="utf-8">
     <link href="css/reset.css" type="text/css" rel="stylesheet">
     <link href="css/main.css" type="text/css" rel="stylesheet">
     <title>Coder pour les noobs</title>
 </head>
-
 <body>
 <noscript>
     <p>Ce site utilise JavaScript, mais il semblerait que ce navigateur l'ait désactivé</p>
 </noscript>
-<header class="top">
-    <img src="img/logo_site.svg" alt="Logo du site 'coder pour les noobs'">
-    <h1 id="ajax-target" hidden></h1>
+<header class="top ease-out">
+    <a href="img/y2_web.mp4">
+        <img src="img/logo_site.svg" alt="Logo du site 'coder pour les noobs'">
+    </a>
 </header>
 <main class="side-by-side">
-    <div class="vertical-space-between">
-        <div>
-            <header>
-                <h2 id="titre-sommaire">Sommaire</h2>
-            </header>
-            <nav id="sommaire">
-                <ul class="list-option index-list">
-                    <li>Home</li>
-                    <li><a class="link" href="html/signup.html">Sign up</a></li>
-                    <li><a class="link" href="html/html.html">HTML</a></li>
-                    <li><a class="link" href="html/css.html">CSS</a></li>
-                    <li><a class="link" href="html/js.html">JavaScript</a></li>
-                </ul>
-            </nav>
-        </div>
-        <form class="space-above" action="img/y2_web.mp4" method="POST">
-            <fieldset>
-                <legend>Inscrivez-vous à notre newsletter ici</legend>
-                <label for="newsletter">Email</label>
-                <input name="newsletter" id="newsletter">
-                <button class="bouton-nl">Soumettre</button>
-            </fieldset>
-        </form>
-    </div>
-    <div>
+    <nav>
+        <ul class="list-option">
+            <li>Home</li>
+            <li><a class="link" href="html/signup.html">Sign up</a></li>
+            <li><a class="link" href="html/html.html">HTML</a></li>
+            <li><a class="link" href="html/css.html">CSS</a></li>
+            <li><a class="link" href="html/js.html">JavaScript</a></li>
+        </ul>
+    </nav>
+    <div class="side-by-side">
         <form action="htbin/login.py" method="POST" id="login-form">
             <fieldset class="formulaire">
                 <legend>Log&nbsp;in</legend>
@@ -50,15 +34,17 @@
 
                 <label for="userpwd">Mot de passe</label>
                 <input class="login-field" id="userpwd" type="password" name="userpwd">
-
+                <p id="ajax-target" hidden></p>
                 <div class="side-by-side space-above">
                     <input id="login-submit" class="bouton-nl" type="submit" value="S'identifier"/>
                     <input type="reset" value="Réinitialiser"/>
                 </div>
             </fieldset>
         </form>
-        <p>Pas encore de profil&nbsp;?<br>
-            Créez-en un <a class="link" href="html/signup.html">ici</a></p>
+        <p class="small">
+            Pas encore de profil&nbsp;?<br>
+            Créez-en un <a class="link" href="html/signup.html">ici</a>
+        </p>
     </div>
 </main>
 <footer>copyright stuff</footer>

@@ -7,7 +7,7 @@ function addAllEvents() {
 
     const userName = document.getElementById("username");
     const userPwd = document.getElementById("userpwd");
-    const form = document.getElementById("login-form");
+    const loginForm = document.getElementById("login-form");
     const ajaxTarget = document.getElementById("ajax-target");
 
     [userName, userPwd].forEach(input =>
@@ -20,7 +20,7 @@ function addAllEvents() {
     );
 
 
-    form.addEventListener("submit", (e) => {
+    loginForm.addEventListener("submit", (e) => {
         e.preventDefault();
         // could be made more dynamic, and less dependent on details in the html... maybe using FormData?
         // on the other hand, no time + login implementation details are fairly standard
@@ -42,12 +42,13 @@ function addAllEvents() {
                     ajaxTarget.style.color = "darkred";
                 }
                 ajaxTarget.innerHTML = response;
+                ajaxTarget.classList.add("small");
                 ajaxTarget.hidden = false;
             }
         }
     });
 
-    form.addEventListener("reset", () => {
+    loginForm.addEventListener("reset", () => {
         ajaxTarget.hidden = true;
     });
 }
