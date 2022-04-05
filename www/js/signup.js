@@ -99,13 +99,13 @@ function addAllEvents() {
             && userName.value.length >= 6
             && userPwd.value.match(pwdExp)
             && userEmail.value.match(emailExp)
-        ) {
-            if (button.disabled === true) { // all good + disabled => enable
+        ) { // all good ...
+            if (button.disabled === true) { // ... disabled => enable
                 button.disabled = false;
             }
             return true;
-        } else { // not all good + enabled => disable
-            if (button.disabled === false) {
+        } else { // not all good ...
+            if (button.disabled === false) { // ... + enabled => disable
                 button.disabled = true;
             }
             return false;
