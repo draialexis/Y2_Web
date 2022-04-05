@@ -81,7 +81,7 @@ function addAllEvents() {
             elm.nextElementSibling.hidden = true; // displaying warnings
             return true;
         } else if (!condition) {
-            if (elm.classList.contains(invalidClass)) {
+            if (elm.classList.contains(validClass)) {
                 elm.classList.remove(validClass);
             }
             elm.classList.add(invalidClass);
