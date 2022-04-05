@@ -28,6 +28,7 @@ function addAllEvents() {
 
         const xhr = new XMLHttpRequest();
         xhr.open("POST", url, true);
+        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
         xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
         xhr.send(params);
 
