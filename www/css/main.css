@@ -49,7 +49,7 @@ form {
     width : 250px;
 }
 
-p {
+p, li {
     text-align: justify;
     text-justify: inter-word;
 }
