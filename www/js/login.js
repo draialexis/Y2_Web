@@ -1,3 +1,21 @@
+function createXHR() {
+    let request;
+    try {
+        request = new ActiveXObject('Msxml2.XMLHTTP');
+    } catch (e1) {
+        try {
+            request = new ActiveXObject('Microsoft.XMLHTTP');
+        } catch (e2) {
+            try {
+                request = new XMLHttpRequest();
+            } catch (e3) {
+                request = false;
+            }
+        }
+    }
+    return request;
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     addAllEvents();
 
@@ -26,8 +44,7 @@ function addAllEvents() {
         // on the other hand, no time + login implementation details are fairly standard
         const params = "username=" + userName.value + "&userpwd=" + userPwd.value;
         const url = "htbin/login.py";
-
-        const xhr = new XMLHttpRequest();
+        const xhr = createXHR();
         xhr.open("POST", url, true);
         xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
         xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
@@ -42,7 +59,9 @@ function addAllEvents() {
                     ajaxTarget.style.color = "darkred";
                 }
                 ajaxTarget.innerHTML = response;
-                ajaxTarget.classList.add("small");
+                if (!(ajaxTarget.classList.contains("small"))) {
+                    ajaxTarget.classList.add("small");
+                }
                 ajaxTarget.hidden = false;
             }
         }
