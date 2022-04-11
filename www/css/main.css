@@ -213,6 +213,10 @@ p + ol {
     color : #000000;
 }
 
+#ajax-target {
+    font-size: small;
+}
+
 /*
 ^^^^^^ link styles ^^^^^^
  */

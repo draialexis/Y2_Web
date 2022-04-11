@@ -60,9 +60,6 @@ function addAllEvents() {
                     ajaxTarget.style.color = "darkred";
                 }
                 ajaxTarget.innerHTML = response;
-                if (!(ajaxTarget.classList.contains("small"))) {
-                    ajaxTarget.classList.add("small");
-                }
                 ajaxTarget.hidden = false;
             }
         }
