@@ -1,3 +1,4 @@
+/* By Matrod C. & Drai A., 2021-22 */
 body {
     min-height       : 99vh;
     padding          : 5%;
@@ -50,8 +51,8 @@ form {
 }
 
 p, li {
-    text-align: justify;
-    text-justify: inter-word;
+    text-align   : justify;
+    text-justify : inter-word;
 }
 
 /*
@@ -214,7 +215,7 @@ p + ol {
 }
 
 #ajax-target {
-    font-size: small;
+    font-size : small;
 }
 
 /*

@@ -1,4 +1,5 @@
-# Y2_Web
+By Matrod Charlotte & Drai Alexis, 2021-22
+# Web Tech: Client
 
 ## Executing
 

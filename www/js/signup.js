@@ -1,3 +1,4 @@
+/* By Matrod C. & Drai A., 2021-22 */
 document.addEventListener('DOMContentLoaded', function () {
     addAllEvents();
 
