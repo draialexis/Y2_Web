@@ -166,7 +166,7 @@ p + ol {
 }
 
 .space-above {
-    margin-top : 10%;
+    margin-top : 10px;
 }
 
 .page-header {
@@ -187,6 +187,31 @@ p + ol {
 .warning {
     margin-top : 0;
     color      : red;
+}
+
+.togglable {
+    border-radius : 20px;
+    padding       : 5px;
+}
+
+.untoggled {
+    color            : #333333;
+    background-color : #CCCCCC;
+}
+
+.toggled {
+    color            : #CCCCCC;
+    background-color : #333333;
+}
+
+#comments-section {
+    min-height : 20vh;
+    min-width  : 10vw;
+    text-align : left;
+    padding    : 10px;
+    background : #FFFFFF;
+    border     : 1px solid #BBBBBB;
+    overflow   : auto;
 }
 
 /*

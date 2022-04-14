@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link href="css/reset.css" type="text/css" rel="stylesheet">
     <link href="css/main.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Coder pour les noobs</title>
 </head>
 <body>
@@ -28,11 +29,10 @@
     </nav>
     <div class="side-by-side">
         <form action="htbin/login.py" method="POST" id="login-form">
-            <fieldset class="formulaire">
+            <fieldset>
                 <legend>Log&nbsp;in</legend>
                 <label for="username">Nom d'utilisateur</label>
                 <input class="login-field" id="username" type="text" name="username">
-
                 <label for="userpwd">Mot de passe</label>
                 <input class="login-field" id="userpwd" type="password" name="userpwd">
                 <p id="ajax-target" hidden></p>
@@ -42,13 +42,26 @@
                 </div>
             </fieldset>
         </form>
+        <form action="htbin/chatsend.py" method="POST" id="chat-form" hidden="true">
+            <fieldset>
+                <legend>Chatbox</legend>
+                <section id="comments-section"></section>
+                <label for="chat-input">votre message</label>
+                <input class="login-field" id="chat-input" type="text" name="username">
+                <input class="form-button space-above" id="chat-submit" type="submit" value="Envoyer"/>
+            </fieldset>
+        </form>
         <p>
             Pas encore de profil&nbsp;?<br>
             Vous pouvez en créer un <a class="link" href="html/signup.html">ici</a>
         </p>
     </div>
 </main>
-<footer><span>By Matrod C. & Drai A., 2021-22</span></footer>
+<footer><span>By Matrod C. & Drai A., 2021-22</span>
+    <button id="chat-toggle" class="untoggled togglable">Chatbox</button>
+</footer>
+<script src="js/ajax.js"></script>
+<script src="js/chat.js"></script>
 <script src="js/login.js"></script>
 </body>
 </html>
