@@ -206,7 +206,7 @@ p + ol {
 
 #comments-section {
     min-height : 20vh;
-    min-width  : 10vw;
+    min-width  : 20vw;
     text-align : left;
     padding    : 10px;
     background : #FFFFFF;
