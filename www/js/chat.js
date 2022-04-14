@@ -1,5 +1,4 @@
 /* By Matrod C. & Drai A., 2021-22 */
-
 $(document).ready(function () {
     const $form = $("#chat-form");
     const $box = $("#comments-section");
