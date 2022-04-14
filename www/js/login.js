@@ -18,6 +18,10 @@ function addAllEvents() {
                 e.preventDefault();
                 document.getElementById("login-submit").click();
             }
+            if (e.key === "Escape") {
+                e.preventDefault();
+                ajaxTarget.innerHTML = "";
+            }
         })
     );
 
@@ -28,9 +32,8 @@ function addAllEvents() {
         // could be made more dynamic, and less dependent on details in the html... maybe using FormData?
         // on the other hand, no time + login implementation details are fairly standard
         const params = "username=" + userName.value + "&userpwd=" + userPwd.value;
-        const url = "htbin/login.py";
         const xhr = createXHR();
-        xhr.open("POST", url, true);
+        xhr.open("POST", "htbin/login.py", true);
         xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
         xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
         xhr.send(params);
