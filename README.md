@@ -18,5 +18,3 @@ From root, run `python3 httpd`
 ## Project instructions (in French)
 
 https://lmbp.uca.fr/~barrel/2022tp/tp2/
-
-### NB: *Step 5 is not covered* in this project, as per our TA's intructions
